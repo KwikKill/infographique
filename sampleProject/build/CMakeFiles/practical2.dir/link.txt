@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\practical2.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\practical2.dir/objects.a @CMakeFiles\practical2.dir\objects1.rsp
+C:\MinGW\bin\c++.exe  -std=c++0x -static-libgcc -static-libstdc++ -fopenmp -g -static-libgcc -static-libstdc++ -DDEBUG -Wl,--whole-archive CMakeFiles\practical2.dir/objects.a -Wl,--no-whole-archive -o practical2.exe -Wl,--out-implib,libpractical2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\practical2.dir\linkLibs.rsp
