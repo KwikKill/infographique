@@ -3,17 +3,20 @@
 #include <CylinderMeshRenderable.hpp>
 #include <MeshRenderable.hpp>
 #include <FrameRenderable.hpp>
-#include <MeshRenderable.hpp>
 
 void initialize_scene( Viewer& viewer )
 {
     // Create a shader program
 	ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(
-        "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl",
-        "../../sfmlGraphicsPipeline/shaders/flatFragment.glsl");
+        "../../sfmlGraphicsPipeline/shaders/debugVertex.glsl",
+        "../../sfmlGraphicsPipeline/shaders/debugFragment.glsl"
+    );
 
     // Add the shader program to the viewer
     viewer.addShaderProgram( flatShader );
+
+    FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
+	//viewer.addRenderable(frame);
 
 	// Create a cylinder
     bool indexed = false; // indexed version already implemented
@@ -31,6 +34,22 @@ void initialize_scene( Viewer& viewer )
     suzanne->setModelMatrix(getTranslationMatrix(5,0,0));
     // Add suzanne to the viewer
     viewer.addRenderable(suzanne);
+
+    // Create cat
+    const std::string cat_path = "../../sfmlGraphicsPipeline/meshes/cat.obj";
+    MeshRenderablePtr cat = std::make_shared<MeshRenderable>(flatShader, cat_path);
+    cat->setModelMatrix(getTranslationMatrix(9,3.2,0));
+    // Add cat to the viewer
+    viewer.addRenderable(cat);
+    
+    // Create pillar
+    const std::string pillar_path = "../../sfmlGraphicsPipeline/meshes/pillar.obj";
+    MeshRenderablePtr pillar = std::make_shared<MeshRenderable>(flatShader, pillar_path);
+    pillar->setModelMatrix(getTranslationMatrix(9,0,0));
+    // rotate the pillar to make it vertical (90° = pi/2)
+    pillar->setModelMatrix(glm::rotate(pillar->getModelMatrix(), 1.5708f, glm::vec3(0,0,1)));
+    // Add pillar to the viewer
+    viewer.addRenderable(pillar);
 }
 
 int main() 

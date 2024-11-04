@@ -15,7 +15,10 @@ MeshRenderable::MeshRenderable(ShaderProgramPtr program,
 {
     // TODO: 
     // use read_obj from Io.hpp to populate m_positions, m_indices, m_normals and m_tcoords
-    set_random_colors();
+    if (!read_obj(mesh_filename, m_positions, m_indices, m_normals, m_tcoords)){
+        return;
+    }
+    //set_random_colors();
     gen_buffers();
     update_buffers();
 }

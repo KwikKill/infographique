@@ -30,12 +30,20 @@ CylinderMeshRenderable::CylinderMeshRenderable(ShaderProgramPtr shaderProgram, b
         // Go to Utils.cpp and fill this function
         getUnitCylinder(m_positions, m_normals, m_tcoords, slices, vertex_normals);
         // Set random colors per triangle
-        m_colors.resize(m_positions.size(), glm::vec4(0));
+        /*m_colors.resize(m_positions.size(), glm::vec4(0));
         for (size_t i=0; i<m_colors.size() / 3; ++i){
             glm::vec4 color = randomColor();
             m_colors[ 3 * i + 0 ] = color;
             m_colors[ 3 * i + 1 ] = color;
             m_colors[ 3 * i + 2 ] = color;
+        }*/
+
+        // Set normal as colors
+        m_colors.resize(m_positions.size(), glm::vec4(0));
+        for (size_t i=0; i<m_colors.size(); ++i){
+            glm::vec3 normal = glm::normalize(m_normals[i]);
+            glm::vec3 color = (normal + glm::vec3(1.0f)) * 0.5f; // Remap from [-1, 1] to [0, 1]
+            m_colors[i] = glm::vec4(color, 1.0f);
         }
     }
 

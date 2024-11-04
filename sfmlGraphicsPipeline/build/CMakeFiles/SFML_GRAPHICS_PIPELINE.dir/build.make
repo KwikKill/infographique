@@ -191,11 +191,26 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.s: cmake_fo
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\HierarchicalRenderable.cpp -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\HierarchicalRenderable.cpp.s
 
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/IndexedCubeRenderable.cpp
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\IndexedCubeRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\IndexedCubeRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\IndexedCubeRenderable.cpp
+
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\IndexedCubeRenderable.cpp > CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\IndexedCubeRenderable.cpp.i
+
+CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\IndexedCubeRenderable.cpp -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\IndexedCubeRenderable.cpp.s
+
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/flags.make
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Io.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Io.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Io.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\Io.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.i: cmake_force
@@ -210,7 +225,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj: CMakeFiles
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/KeyframeCollection.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\KeyframeCollection.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\KeyframeCollection.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\KeyframeCollection.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.i: cmake_force
@@ -225,7 +240,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.ob
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/KeyframedHierarchicalRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\KeyframedHierarchicalRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\KeyframedHierarchicalRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\KeyframedHierarchicalRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.i: cmake_force
@@ -240,7 +255,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj: CMakeFiles/SFM
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/MeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\MeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\MeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\MeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.i: cmake_force
@@ -255,7 +270,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj: CMakeFiles/SFML_GRAPHIC
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Plane.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Plane.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Plane.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\Plane.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.i: cmake_force
@@ -270,7 +285,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj: CMakeFiles
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/QuadMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\QuadMeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\QuadMeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\QuadMeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/QuadMeshRenderable.cpp.i: cmake_force
@@ -285,7 +300,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj: CMakeFiles/SFML_GR
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Renderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Renderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Renderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\Renderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Renderable.cpp.i: cmake_force
@@ -300,7 +315,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj: CMakeFiles/SFML
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/ShaderProgram.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\ShaderProgram.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\ShaderProgram.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\ShaderProgram.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/ShaderProgram.cpp.i: cmake_force
@@ -315,7 +330,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj: CMakeFil
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/SphereMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\SphereMeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\SphereMeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\SphereMeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/SphereMeshRenderable.cpp.i: cmake_force
@@ -330,7 +345,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj: CMakeFiles/SFML_GRAPHIC
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Utils.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Utils.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Utils.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\Utils.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Utils.cpp.i: cmake_force
@@ -345,7 +360,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj: CMakeFiles/SFML_GRAPHI
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Viewer.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Viewer.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\Viewer.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\Viewer.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Viewer.cpp.i: cmake_force
@@ -360,7 +375,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj: CMakeFiles
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/Collision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\Collision.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\Collision.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\Collision.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Collision.cpp.i: cmake_force
@@ -375,7 +390,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj: C
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ConstantForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ConstantForceField.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ConstantForceField.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ConstantForceField.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceField.cpp.i: cmake_force
@@ -390,7 +405,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ConstantForceFieldRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ConstantForceFieldRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ConstantForceFieldRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ConstantForceFieldRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ConstantForceFieldRenderable.cpp.i: cmake_force
@@ -405,7 +420,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderabl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ControlledForceFieldRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ControlledForceFieldRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ControlledForceFieldRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ControlledForceFieldRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ControlledForceFieldRenderable.cpp.i: cmake_force
@@ -420,7 +435,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj: CM
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/DampingForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\DampingForceField.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\DampingForceField.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\DampingForceField.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DampingForceField.cpp.i: cmake_force
@@ -435,7 +450,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj: CMakeF
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/DynamicSystem.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\DynamicSystem.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\DynamicSystem.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\DynamicSystem.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystem.cpp.i: cmake_force
@@ -450,7 +465,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.o
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/DynamicSystemRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\DynamicSystemRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\DynamicSystemRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\DynamicSystemRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/DynamicSystemRenderable.cpp.i: cmake_force
@@ -465,7 +480,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj: 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/EulerExplicitSolver.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\EulerExplicitSolver.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\EulerExplicitSolver.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\EulerExplicitSolver.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/EulerExplicitSolver.cpp.i: cmake_force
@@ -480,7 +495,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj: CMakeFile
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ForceField.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ForceField.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ForceField.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ForceField.cpp.i: cmake_force
@@ -495,7 +510,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj: CMakeFiles/
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/Particle.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\Particle.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\Particle.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\Particle.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Particle.cpp.i: cmake_force
@@ -510,7 +525,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.ob
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ParticleListRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticleListRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticleListRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ParticleListRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleListRenderable.cpp.i: cmake_force
@@ -525,7 +540,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ParticleParticleCollision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticleParticleCollision.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticleParticleCollision.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ParticleParticleCollision.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleParticleCollision.cpp.i: cmake_force
@@ -540,7 +555,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.ob
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ParticlePlaneCollision.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticlePlaneCollision.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticlePlaneCollision.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ParticlePlaneCollision.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticlePlaneCollision.cpp.i: cmake_force
@@ -555,7 +570,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj: C
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/ParticleRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticleRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\ParticleRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\ParticleRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/ParticleRenderable.cpp.i: cmake_force
@@ -570,7 +585,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj: CMakeFiles/SF
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/Solver.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\Solver.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\Solver.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\Solver.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/Solver.cpp.i: cmake_force
@@ -585,7 +600,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj: CMa
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/SpringForceField.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\SpringForceField.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\SpringForceField.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\SpringForceField.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceField.cpp.i: cmake_force
@@ -600,7 +615,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/SpringForceFieldRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\SpringForceFieldRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\SpringForceFieldRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\SpringForceFieldRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringForceFieldRenderable.cpp.i: cmake_force
@@ -615,7 +630,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj:
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/dynamics/SpringListRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\SpringListRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\dynamics\SpringListRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\dynamics\SpringListRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/dynamics/SpringListRenderable.cpp.i: cmake_force
@@ -630,7 +645,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj: CMakeFiles/SFML_GRA
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/gl_helper.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\gl_helper.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\gl_helper.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\gl_helper.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/gl_helper.cpp.i: cmake_force
@@ -645,7 +660,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/DirectionalLightRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\DirectionalLightRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\DirectionalLightRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\DirectionalLightRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/DirectionalLightRenderable.cpp.i: cmake_force
@@ -660,7 +675,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj: CMakeFiles/SFM
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/Light.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\Light.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\Light.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\Light.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Light.cpp.i: cmake_force
@@ -675,7 +690,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/LightedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\LightedCubeRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\LightedCubeRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\LightedCubeRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCubeRenderable.cpp.i: cmake_force
@@ -690,7 +705,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/LightedCylinderRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\LightedCylinderRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\LightedCylinderRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\LightedCylinderRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedCylinderRenderable.cpp.i: cmake_force
@@ -705,7 +720,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/LightedMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\LightedMeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\LightedMeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\LightedMeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.i: cmake_force
@@ -720,7 +735,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj: CMakeFiles/
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/Material.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\Material.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\Material.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\Material.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/Material.cpp.i: cmake_force
@@ -735,7 +750,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj:
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/PointLightRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\PointLightRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\PointLightRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\PointLightRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/PointLightRenderable.cpp.i: cmake_force
@@ -750,7 +765,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj: 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/lighting/SpotLightRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\SpotLightRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\lighting\SpotLightRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\lighting\SpotLightRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/SpotLightRenderable.cpp.i: cmake_force
@@ -765,7 +780,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj: CMakeFiles/SFML_GRAPHICS_
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/log.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\log.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\log.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\log.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/log.cpp.i: cmake_force
@@ -780,7 +795,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/BillBoardPlaneRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\BillBoardPlaneRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\BillBoardPlaneRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\BillBoardPlaneRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/BillBoardPlaneRenderable.cpp.i: cmake_force
@@ -795,7 +810,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj: C
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/CubeMapRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\CubeMapRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\CubeMapRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\CubeMapRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapRenderable.cpp.i: cmake_force
@@ -810,7 +825,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj: CMakeF
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/CubeMapUtils.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\CubeMapUtils.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\CubeMapUtils.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\CubeMapUtils.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/CubeMapUtils.cpp.i: cmake_force
@@ -825,7 +840,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/EnvMapMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\EnvMapMeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\EnvMapMeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\EnvMapMeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/EnvMapMeshRenderable.cpp.i: cmake_force
@@ -840,7 +855,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/MipMapCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\MipMapCubeRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\MipMapCubeRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\MipMapCubeRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MipMapCubeRenderable.cpp.i: cmake_force
@@ -855,7 +870,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/MultiTexturedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\MultiTexturedCubeRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\MultiTexturedCubeRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\MultiTexturedCubeRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/MultiTexturedCubeRenderable.cpp.i: cmake_force
@@ -870,7 +885,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.o
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/TexturedCubeRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedCubeRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedCubeRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\TexturedCubeRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedCubeRenderable.cpp.i: cmake_force
@@ -885,7 +900,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderabl
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/TexturedLightedMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedLightedMeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedLightedMeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\TexturedLightedMeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderable.cpp.i: cmake_force
@@ -900,7 +915,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.o
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/TexturedMeshRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedMeshRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedMeshRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\TexturedMeshRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.i: cmake_force
@@ -915,7 +930,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/TexturedPlaneRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedPlaneRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedPlaneRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\TexturedPlaneRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedPlaneRenderable.cpp.i: cmake_force
@@ -930,7 +945,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.c
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/includes_CXX.rsp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/texturing/TexturedTriangleRenderable.cpp
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj -MF CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedTriangleRenderable.cpp.obj.d -o CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\src\texturing\TexturedTriangleRenderable.cpp.obj -c C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\src\texturing\TexturedTriangleRenderable.cpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.i: cmake_force
@@ -951,6 +966,7 @@ SFML_GRAPHICS_PIPELINE_OBJECTS = \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/FrameRenderable.cpp.obj" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/GeometricTransformation.cpp.obj" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.obj" \
+"CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj" \
 "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj" \
@@ -1013,6 +1029,7 @@ libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/FPSCounte
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/FrameRenderable.cpp.obj
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/GeometricTransformation.cpp.obj
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.obj
+libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframedHierarchicalRenderable.cpp.obj
@@ -1065,7 +1082,7 @@ libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedTriangleRenderable.cpp.obj
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/build.make
 libSFML_GRAPHICS_PIPELINE.a: CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Linking CXX static library libSFML_GRAPHICS_PIPELINE.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Linking CXX static library libSFML_GRAPHICS_PIPELINE.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\link.txt --verbose=$(VERBOSE)
 

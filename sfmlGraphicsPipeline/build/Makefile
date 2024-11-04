@@ -320,6 +320,30 @@ src/HierarchicalRenderable.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.s
 .PHONY : src/HierarchicalRenderable.cpp.s
 
+src/IndexedCubeRenderable.obj: src/IndexedCubeRenderable.cpp.obj
+.PHONY : src/IndexedCubeRenderable.obj
+
+# target to build an object file
+src/IndexedCubeRenderable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj
+.PHONY : src/IndexedCubeRenderable.cpp.obj
+
+src/IndexedCubeRenderable.i: src/IndexedCubeRenderable.cpp.i
+.PHONY : src/IndexedCubeRenderable.i
+
+# target to preprocess a source file
+src/IndexedCubeRenderable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.i
+.PHONY : src/IndexedCubeRenderable.cpp.i
+
+src/IndexedCubeRenderable.s: src/IndexedCubeRenderable.cpp.s
+.PHONY : src/IndexedCubeRenderable.s
+
+# target to generate assembly for a file
+src/IndexedCubeRenderable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SFML_GRAPHICS_PIPELINE.dir\build.make CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.s
+.PHONY : src/IndexedCubeRenderable.cpp.s
+
 src/Io.obj: src/Io.cpp.obj
 .PHONY : src/Io.obj
 
@@ -1553,6 +1577,9 @@ help:
 	@echo ... src/HierarchicalRenderable.obj
 	@echo ... src/HierarchicalRenderable.i
 	@echo ... src/HierarchicalRenderable.s
+	@echo ... src/IndexedCubeRenderable.obj
+	@echo ... src/IndexedCubeRenderable.i
+	@echo ... src/IndexedCubeRenderable.s
 	@echo ... src/Io.obj
 	@echo ... src/Io.i
 	@echo ... src/Io.s

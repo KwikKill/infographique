@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/GeometricTransformation.cpp.obj.d"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.obj"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/HierarchicalRenderable.cpp.obj.d"
+  "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj"
+  "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj.d"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj.d"
   "CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj"
