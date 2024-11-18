@@ -258,6 +258,19 @@ practical7/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/build
 .PHONY : practical7/fast
 
+#=============================================================================
+# Target rules for targets named scene
+
+# Build rule for target.
+scene: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene
+.PHONY : scene
+
+# fast build rule for target.
+scene/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/build
+.PHONY : scene/fast
+
 demo_cubemap_blurring.obj: demo_cubemap_blurring.cpp.obj
 .PHONY : demo_cubemap_blurring.obj
 
@@ -522,6 +535,30 @@ practical7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/practical7.cpp.s
 .PHONY : practical7.cpp.s
 
+scene.obj: scene.cpp.obj
+.PHONY : scene.obj
+
+# target to build an object file
+scene.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/scene.cpp.obj
+.PHONY : scene.cpp.obj
+
+scene.i: scene.cpp.i
+.PHONY : scene.i
+
+# target to preprocess a source file
+scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/scene.cpp.i
+.PHONY : scene.cpp.i
+
+scene.s: scene.cpp.s
+.PHONY : scene.s
+
+# target to generate assembly for a file
+scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/scene.cpp.s
+.PHONY : scene.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -541,6 +578,7 @@ help:
 	@echo ... practical5
 	@echo ... practical6
 	@echo ... practical7
+	@echo ... scene
 	@echo ... demo_cubemap_blurring.obj
 	@echo ... demo_cubemap_blurring.i
 	@echo ... demo_cubemap_blurring.s
@@ -574,6 +612,9 @@ help:
 	@echo ... practical7.obj
 	@echo ... practical7.i
 	@echo ... practical7.s
+	@echo ... scene.obj
+	@echo ... scene.i
+	@echo ... scene.s
 .PHONY : help
 
 

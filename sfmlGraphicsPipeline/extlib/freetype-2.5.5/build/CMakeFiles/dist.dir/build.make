@@ -52,10 +52,10 @@ RM = "C:\Program Files\CMake\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5
+CMAKE_SOURCE_DIR = C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build
+CMAKE_BINARY_DIR = C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build
 
 # Utility rule file for dist.
 
@@ -84,6 +84,6 @@ CMakeFiles/dist.dir/clean:
 .PHONY : CMakeFiles/dist.dir/clean
 
 CMakeFiles/dist.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5 C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5 C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build C:\Users\gabri\Documents\dev\infographique\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build\CMakeFiles\dist.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5 C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5 C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build C:\Users\gabri\Documents\dev\infographique2\sfmlGraphicsPipeline\extlib\freetype-2.5.5\build\CMakeFiles\dist.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dist.dir/depend
 

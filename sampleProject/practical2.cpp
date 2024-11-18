@@ -21,7 +21,7 @@ void initialize_scene( Viewer& viewer )
 	// Create a cylinder
     bool indexed = false; // indexed version already implemented
     unsigned int slices = 20u; // number of slices
-    bool vertex_normals = false; // use vertex normals ? else triangle normals
+    bool vertex_normals = true; // use vertex normals ? else triangle normals
     // See CylinderMeshRenderable.cpp 
     CylinderMeshRenderablePtr cylinder = std::make_shared<CylinderMeshRenderable>(flatShader, indexed, slices, vertex_normals);
 
@@ -31,7 +31,7 @@ void initialize_scene( Viewer& viewer )
     // Create suzanne
     const std::string suzanne_path = "../../sfmlGraphicsPipeline/meshes/suzanne.obj";
     MeshRenderablePtr suzanne = std::make_shared<MeshRenderable>(flatShader, suzanne_path);
-    suzanne->setModelMatrix(getTranslationMatrix(5,0,0));
+    suzanne->setModelMatrix(getTranslationMatrix(0,5,0));
     // Add suzanne to the viewer
     viewer.addRenderable(suzanne);
 
@@ -50,6 +50,14 @@ void initialize_scene( Viewer& viewer )
     pillar->setModelMatrix(glm::rotate(pillar->getModelMatrix(), 1.5708f, glm::vec3(0,0,1)));
     // Add pillar to the viewer
     viewer.addRenderable(pillar);
+
+    const std::string traing_path = "../../good/goodgood3.obj";
+    MeshRenderablePtr traing = std::make_shared<MeshRenderable>(flatShader, traing_path);
+    traing->setModelMatrix(getTranslationMatrix(5,0,0));
+    // Reduce scale (/10)
+    traing->setModelMatrix(glm::scale(traing->getModelMatrix(), glm::vec3(0.1,0.1,0.1)));
+    // Add traing to the viewer
+    viewer.addRenderable(traing);
 }
 
 int main() 
