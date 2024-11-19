@@ -27,8 +27,8 @@ void collisions(Viewer& viewer, DynamicSystemPtr& system, DynamicSystemRenderabl
 void initialize_scene( Viewer& viewer )
 {
     //Set up a shader and add a 3D frame.
-    ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl", 
-                                                                    "../../sfmlGraphicsPipeline/shaders/flatFragment.glsl");
+    ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/debugVertex.glsl", 
+                                                                    "../../sfmlGraphicsPipeline/shaders/debugFragment.glsl");
     viewer.addShaderProgram( flatShader );
     FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
     viewer.addRenderable(frame);

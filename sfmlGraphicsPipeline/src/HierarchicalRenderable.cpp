@@ -26,7 +26,7 @@ void HierarchicalRenderable::setGlobalTransform( const glm::mat4& globalTransfor
 void HierarchicalRenderable::updateModelMatrix()
 {
     //TODO: Get absolute model matrix
-    m_model = computeTotalGlobalTransform();
+    m_model = computeTotalGlobalTransform() * m_localTransform;
 }
 
 const glm::mat4& HierarchicalRenderable::getLocalTransform() const

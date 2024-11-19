@@ -3,6 +3,7 @@
 #include <CylinderMeshRenderable.hpp>
 #include <MeshRenderable.hpp>
 #include <FrameRenderable.hpp>
+#include <HierarchicalRenderable.hpp>
 
 void initialize_scene( Viewer& viewer )
 {
@@ -18,13 +19,70 @@ void initialize_scene( Viewer& viewer )
     FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flatShader);
 	//viewer.addRenderable(frame);
 
-    const std::string traing_path = "../../good/goodgood3.obj";
-    MeshRenderablePtr traing = std::make_shared<MeshRenderable>(flatShader, traing_path);
-    traing->setModelMatrix(getTranslationMatrix(0,0,0));
+    /*const std::string tuture_path = "../../good/carcasse.obj";
+    MeshRenderablePtr tuture = std::make_shared<MeshRenderable>(flatShader, tuture_path);
+
+    const std::string roues_avant_path = "../../good/roues.obj";
+    MeshRenderablePtr roues_avant = std::make_shared<MeshRenderable>(flatShader, roues_avant_path);
+
+    const std::string roues_arriere_path = "../../good/roues.obj";
+    MeshRenderablePtr roues_arriere = std::make_shared<MeshRenderable>(flatShader, roues_arriere_path);
+
+    // Move the roues to the right place
+    roues_avant->setGlobalTransform(getTranslationMatrix(1.2, 0.3, 0));
+    roues_arriere->setGlobalTransform(getTranslationMatrix(-1.7, 0.3, 0));
+
+
+    // set the hierarchie
+    MeshRenderable::addChild(tuture, roues_avant);
+	MeshRenderable::addChild(tuture, roues_arriere);
+
+    // make the roues rotate
+    roues_avant->addLocalTransformKeyframe(getRotationMatrix(0.0, glm::vec3(0, 0, 2)), 0.0);
+    roues_avant->addLocalTransformKeyframe(getRotationMatrix(3.14, glm::vec3(0, 0, 2)), 1.0);
+    roues_avant->addLocalTransformKeyframe(getRotationMatrix(3.14*2, glm::vec3(0, 0, 2)), 2.0);
+
+    roues_arriere->addLocalTransformKeyframe(getRotationMatrix(0.0, glm::vec3(0, 0, 2)), 0.0);
+    roues_arriere->addLocalTransformKeyframe(getRotationMatrix(3.14, glm::vec3(0, 0, 2)), 1.0);
+    roues_arriere->addLocalTransformKeyframe(getRotationMatrix(3.14*2, glm::vec3(0, 0, 2)), 2.0);
+
+    viewer.startAnimation();
+
+    //traing->setModelMatrix(getTranslationMatrix(0,0,0));
     // Reduce scale (/10)
-    traing->setModelMatrix(glm::scale(traing->getModelMatrix(), glm::vec3(0.1,0.1,0.1)));
+    //traing->setModelMatrix(glm::scale(traing->getModelMatrix(), glm::vec3(0.1,0.1,0.1)));
     // Add traing to the viewer
+    viewer.addRenderable(tuture);*/
+
+
+    const std::string traing_path = "../../good/ossature_train.obj";
+    MeshRenderablePtr traing = std::make_shared<MeshRenderable>(flatShader, traing_path);
+
+    const std::string roue1_path = "../../good/train_roues1_obj.obj";
+    MeshRenderablePtr roue1 = std::make_shared<MeshRenderable>(flatShader, roue1_path);
+
+    // Move the roues to the right place
+    roue1->setGlobalTransform(getTranslationMatrix(1.2, 0.3, 0));
+
+    // set the hierarchie
+    HierarchicalRenderable::addChild(traing, roue1);
+
+    // make the roues rotate
+    roue1->addLocalTransformKeyframe(getRotationMatrix(0.0, glm::vec3(0, 0, 2)), 0.0);
+    roue1->addLocalTransformKeyframe(getRotationMatrix(3.14, glm::vec3(0, 0, 2)), 1.0);
+    roue1->addLocalTransformKeyframe(getRotationMatrix(3.14*2, glm::vec3(0, 0, 2)), 2.0);
+
+    viewer.startAnimation();
+
     viewer.addRenderable(traing);
+
+    //const std::string test_path = "../../good/v0join.obj";
+    //MeshRenderablePtr test = std::make_shared<MeshRenderable>(flatShader, test_path);
+
+    // Move the roues to the right place
+    //test->setGlobalTransform(getTranslationMatrix(1.2, 0.3, 0));
+
+    //viewer.addRenderable(test);
 }
 
 int main() 

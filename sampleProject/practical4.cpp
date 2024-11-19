@@ -28,7 +28,7 @@ int main()
 		viewer.animate();
 		viewer.draw();
 		viewer.display();
-	}	
+	}
 
 	return EXIT_SUCCESS;
 }
@@ -36,8 +36,8 @@ int main()
 void movingCylinder( Viewer& viewer )
 {
     //Add shader
-    ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/flatVertex.glsl", 
-                                                                    "../../sfmlGraphicsPipeline/shaders/flatFragment.glsl");
+    ShaderProgramPtr flatShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/debugVertex.glsl", 
+                                                                    "../../sfmlGraphicsPipeline/shaders/debugFragment.glsl");
     viewer.addShaderProgram( flatShader );
 
     //Frame
@@ -48,13 +48,17 @@ void movingCylinder( Viewer& viewer )
     auto cylinder = std::make_shared<CylinderMeshRenderable>(flatShader, false);
     cylinder->setGlobalTransform(glm::mat4(1.0));
 
-    // TODO: Keyframes on parent transformation
-    //cylinder->addGlobalTransformKeyframe(...);
-    //...
+    viewer.addRenderable(cylinder);
 
-    // TODO: Keyframes on local transformation
-    //cylinder->addLocalTransformKeyframe(...);
-    //...
+    // Keyframes on parent transformation
+    cylinder->addGlobalTransformKeyframe(GeometricTransformation(glm::vec3(0.0, 0.0, 0.0), glm::quat(), glm::vec3(1.0)).toMatrix(), 0.0);
+    cylinder->addGlobalTransformKeyframe(GeometricTransformation(glm::vec3(0.0, 0.0, 2.0), glm::quat(), glm::vec3(1.0)).toMatrix(), 2.0);
+    cylinder->addGlobalTransformKeyframe(GeometricTransformation(glm::vec3(0.0, 0.0, 0.0), glm::quat(), glm::vec3(1.0)).toMatrix(), 4.0);
+
+    // Keyframes on local transformation
+    cylinder->addLocalTransformKeyframe(GeometricTransformation(glm::vec3(0.0, 0.0, 0.0), glm::quat(), glm::vec3(1.0)).toMatrix(), 0.0);
+    cylinder->addLocalTransformKeyframe(GeometricTransformation(glm::vec3(0.0, 0.0, 0.0), glm::quat(glm::vec3(0.0, glm::radians(180.0f), 0.0)), glm::vec3(1.0)).toMatrix(), 2.0);
+    cylinder->addLocalTransformKeyframe(GeometricTransformation(glm::vec3(0.0, 0.0, 0.0), glm::quat(), glm::vec3(1.0)).toMatrix(), 4.0);
 
     viewer.startAnimation();
 }
