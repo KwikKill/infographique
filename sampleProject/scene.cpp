@@ -62,15 +62,15 @@ void initialize_scene( Viewer& viewer )
     MeshRenderablePtr roue1 = std::make_shared<MeshRenderable>(flatShader, roue1_path);
 
     // Move the roues to the right place
-    roue1->setGlobalTransform(getTranslationMatrix(1.2, 0.3, 0));
+    roue1->setGlobalTransform(getTranslationMatrix(-10, 0.0, 0));
 
     // set the hierarchie
     HierarchicalRenderable::addChild(traing, roue1);
 
     // make the roues rotate
-    roue1->addLocalTransformKeyframe(getRotationMatrix(0.0, glm::vec3(0, 0, 2)), 0.0);
-    roue1->addLocalTransformKeyframe(getRotationMatrix(3.14, glm::vec3(0, 0, 2)), 1.0);
-    roue1->addLocalTransformKeyframe(getRotationMatrix(3.14*2, glm::vec3(0, 0, 2)), 2.0);
+    roue1->addLocalTransformKeyframe(getRotationMatrix(0.0, glm::vec3(2, 0, 0)), 0.0);
+    roue1->addLocalTransformKeyframe(getRotationMatrix(3.14, glm::vec3(2, 0, 0)), 1.0);
+    roue1->addLocalTransformKeyframe(getRotationMatrix(3.14*2, glm::vec3(2, 0, 0)), 2.0);
 
     viewer.startAnimation();
 

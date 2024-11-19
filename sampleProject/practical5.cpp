@@ -48,8 +48,8 @@ void initialize_scene( Viewer& viewer )
     //Populate the dynamic system with particles, forcefields and create renderables associated to them for visualization.
     //Uncomment only one of the following line
 
-    particles(viewer, system, systemRenderable);
-    //springs(viewer, system, systemRenderable);
+    //particles(viewer, system, systemRenderable);
+    springs(viewer, system, systemRenderable);
     //collisions(viewer, system, systemRenderable);
     //playPool(viewer, system, systemRenderable);
 
