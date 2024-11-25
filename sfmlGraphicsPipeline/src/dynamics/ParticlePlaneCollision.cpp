@@ -13,51 +13,35 @@ ParticlePlaneCollision::ParticlePlaneCollision(ParticlePtr particle, PlanePtr pl
 
 void ParticlePlaneCollision::do_solveCollision()
 {
-    //Don't process fixed particles (Let's assume that the ground plane is fixed)
+    // Don't process fixed particles (Let's assume that the ground plane is fixed)
     if (m_particle->isFixed()) return;
 
-    //TODO: Solve ParticlePlane collisions, update particle position and velocity after collision
-    //Functions to use:
-    //glm::dot(v1, v2): Return the dot product of two vector.
-    //Plane::distanceToOrigin(): Return the distance to origin from the plane
-    //Plane::normal(): Return the normal of the plane
-    //Particle::getRadius(), Particle::getPosition(), Particle::getVelocity(), Particle::setPosition(), Particle::setVelocity()
+    // Compute particle-plane distance
+    float distance = glm::dot(m_plane->normal(), m_particle->getPosition()) - m_plane->distanceToOrigin();
 
-    //Compute particle-plane distance
+    // Check if the particle is colliding with the plane
+    if (distance < m_particle->getRadius())
+    {
+        // Project the particle on the plane
+        glm::vec3 correction = (m_particle->getRadius() - distance) * m_plane->normal();
+        glm::vec3 newPosition = m_particle->getPosition() + correction;
+        m_particle->setPosition(newPosition);
 
-    //Project the particle on the plane
-
-    //Compute post-collision velocity
-
+        // Compute post-collision velocity
+        glm::vec3 velocity = m_particle->getVelocity();
+        glm::vec3 normal = m_plane->normal();
+        glm::vec3 newVelocity = velocity - (1.0f + m_restitution) * glm::dot(velocity, normal) * normal;
+        m_particle->setVelocity(newVelocity);
+    }
 }
 
 
 
 bool testParticlePlane(const ParticlePtr &particle, const PlanePtr &plane)
 {
-    /* Equation of a plane passing through A and normal to n:
-   * dot( p - A, n ) = dot( p, n ) - dot( A, n ) = 0
-   * dot( A, n ) is stored in the "distanceToOrigin" of the plane.
-   *
-   * Equation of a particle of radius r centered in c:
-   * dot( p - c, p - c ) = r²
-   *
-   * distance( plane, particle )
-   *   = min( distance( plane, c ) - r, 0 )              //definition
-   *   = min( abs( dot( c - A, n ) ) - r, 0 )
-   *   = min( abs( dot( c, n ) - dot( A, n ) ) - r, 0 )
-   *
-   * So, there is intersection if distance( plane, particle ) = 0
-   * <=> abs( dot( c, n ) - dot( A, n ) ) - r <= 0
-   * <=> abs( dot( c, n ) - dot( A, n ) ) <= r
-   */
+    // Compute the distance from the particle to the plane
+    float distance = glm::dot(plane->normal(), particle->getPosition()) - plane->distanceToOrigin();
 
-    //TODO: Test collision between particle and plane
-    //Functions to use:
-    //glm::dot(v1, v2): Return the dot product of two vector.
-    //Plane::distanceToOrigin(): Return the distance to origin from the plane
-    //Plane::normal(): Return the normal of the plane
-    //Particle::getRadius(), Particle::getPosition()
-
-    return false;
+    // Check if the absolute distance is less than or equal to the particle's radius
+    return std::abs(distance) <= particle->getRadius();
 }

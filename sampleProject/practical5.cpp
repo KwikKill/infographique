@@ -49,9 +49,9 @@ void initialize_scene( Viewer& viewer )
     //Uncomment only one of the following line
 
     //particles(viewer, system, systemRenderable);
-    springs(viewer, system, systemRenderable);
+    //springs(viewer, system, systemRenderable);
     //collisions(viewer, system, systemRenderable);
-    //playPool(viewer, system, systemRenderable);
+    playPool(viewer, system, systemRenderable);
 
     //Finally activate animation
     viewer.startAnimation();
@@ -164,7 +164,7 @@ void springs(Viewer& viewer, DynamicSystemPtr& system, DynamicSystemRenderablePt
     }
 
     //Initialize springs attributes (stiffness, rest length, damping)
-    float stiffness = 4e3, l0 = gridWidth / (particlePerLine-1), damping = 0.0;
+    float stiffness = 4e3, l0 = gridWidth / (particlePerLine-1), damping = -500;
 
     //Create springs between particles of the grid, horizontally and vertically
     //Store them in a list
@@ -203,7 +203,7 @@ void springs(Viewer& viewer, DynamicSystemPtr& system, DynamicSystemRenderablePt
     system->addForceField( gravityForceField );
 
     //Initialize a force field that apply to all the particles of the system to simulate vicosity (air friction)
-    float dampingCoefficient = 0.0;
+    float dampingCoefficient = 100;
     DampingForceFieldPtr dampingForceField = std::make_shared<DampingForceField>(system->getParticles(), dampingCoefficient);
     system->addForceField(dampingForceField);
 
@@ -229,12 +229,12 @@ void collisions(Viewer& viewer, DynamicSystemPtr& system, DynamicSystemRenderabl
     viewer.addShaderProgram( flatShader );
 
     //Activate collision detection
-    system->setCollisionsDetection(false);
+    system->setCollisionsDetection(true);
 
     //Initialize the restitution coefficient for collision
     //1.0 = full elastic response
     //0.0 = full absorption
-    system->setRestitution(1.0f);
+    system->setRestitution(0.5f);
 
     //Initialize a plane from 3 points and add it to the system as an obstacle
     glm::vec3 p1(1.0,0.0,1.0),p2(1.0,0.0,-1.0), p3(-1.0,0.0,-1.0), p4(-1.0,0.0,1.0);
@@ -252,7 +252,7 @@ void collisions(Viewer& viewer, DynamicSystemPtr& system, DynamicSystemRenderabl
 
         //Initialize a particle with position, velocity, mass and radius and add it to the system
         px = glm::vec3(0.0,1.0,0.0);
-        pv = glm::vec3(0.0,0.0,0.0);
+        pv = glm::vec3(0.0,3.0,0.0);
         pr = 0.1;
         pm = 1.0;
         ParticlePtr particle = std::make_shared<Particle>( px, pv, pm, pr);
@@ -410,7 +410,7 @@ void playPool(Viewer& viewer, DynamicSystemPtr& system, DynamicSystemRenderableP
     system->addForceField( gravityForceField );
 
     //Add a damping force field to the mobile.
-    DampingForceFieldPtr dampingForceField = std::make_shared<DampingForceField>(vParticle, 0.9);
+    DampingForceFieldPtr dampingForceField = std::make_shared<DampingForceField>(vParticle, 0.3);
     system->addForceField( dampingForceField );
 
     //Activate collision and set the restitution coefficient to 1.0
