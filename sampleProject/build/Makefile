@@ -142,6 +142,19 @@ demo_environment_lighting/fast:
 .PHONY : demo_environment_lighting/fast
 
 #=============================================================================
+# Target rules for targets named demo_load_materials
+
+# Build rule for target.
+demo_load_materials: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 demo_load_materials
+.PHONY : demo_load_materials
+
+# fast build rule for target.
+demo_load_materials/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/build
+.PHONY : demo_load_materials/fast
+
+#=============================================================================
 # Target rules for targets named demo_moving_lights
 
 # Build rule for target.
@@ -259,17 +272,30 @@ practical7/fast:
 .PHONY : practical7/fast
 
 #=============================================================================
-# Target rules for targets named scene
+# Target rules for targets named scene2
 
 # Build rule for target.
-scene: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene
-.PHONY : scene
+scene2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene2
+.PHONY : scene2
 
 # fast build rule for target.
-scene/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/build
-.PHONY : scene/fast
+scene2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/build
+.PHONY : scene2/fast
+
+#=============================================================================
+# Target rules for targets named scene_old
+
+# Build rule for target.
+scene_old: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene_old
+.PHONY : scene_old
+
+# fast build rule for target.
+scene_old/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/build
+.PHONY : scene_old/fast
 
 demo_cubemap_blurring.obj: demo_cubemap_blurring.cpp.obj
 .PHONY : demo_cubemap_blurring.obj
@@ -318,6 +344,30 @@ demo_environment_lighting.s: demo_environment_lighting.cpp.s
 demo_environment_lighting.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_environment_lighting.dir\build.make CMakeFiles/demo_environment_lighting.dir/demo_environment_lighting.cpp.s
 .PHONY : demo_environment_lighting.cpp.s
+
+demo_load_materials.obj: demo_load_materials.cpp.obj
+.PHONY : demo_load_materials.obj
+
+# target to build an object file
+demo_load_materials.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/demo_load_materials.cpp.obj
+.PHONY : demo_load_materials.cpp.obj
+
+demo_load_materials.i: demo_load_materials.cpp.i
+.PHONY : demo_load_materials.i
+
+# target to preprocess a source file
+demo_load_materials.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/demo_load_materials.cpp.i
+.PHONY : demo_load_materials.cpp.i
+
+demo_load_materials.s: demo_load_materials.cpp.s
+.PHONY : demo_load_materials.s
+
+# target to generate assembly for a file
+demo_load_materials.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/demo_load_materials.cpp.s
+.PHONY : demo_load_materials.cpp.s
 
 demo_moving_lights.obj: demo_moving_lights.cpp.obj
 .PHONY : demo_moving_lights.obj
@@ -535,29 +585,53 @@ practical7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/practical7.cpp.s
 .PHONY : practical7.cpp.s
 
-scene.obj: scene.cpp.obj
-.PHONY : scene.obj
+scene2.obj: scene2.cpp.obj
+.PHONY : scene2.obj
 
 # target to build an object file
-scene.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/scene.cpp.obj
-.PHONY : scene.cpp.obj
+scene2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/scene2.cpp.obj
+.PHONY : scene2.cpp.obj
 
-scene.i: scene.cpp.i
-.PHONY : scene.i
+scene2.i: scene2.cpp.i
+.PHONY : scene2.i
 
 # target to preprocess a source file
-scene.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/scene.cpp.i
-.PHONY : scene.cpp.i
+scene2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/scene2.cpp.i
+.PHONY : scene2.cpp.i
 
-scene.s: scene.cpp.s
-.PHONY : scene.s
+scene2.s: scene2.cpp.s
+.PHONY : scene2.s
 
 # target to generate assembly for a file
-scene.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/scene.cpp.s
-.PHONY : scene.cpp.s
+scene2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/scene2.cpp.s
+.PHONY : scene2.cpp.s
+
+scene_old.obj: scene_old.cpp.obj
+.PHONY : scene_old.obj
+
+# target to build an object file
+scene_old.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/scene_old.cpp.obj
+.PHONY : scene_old.cpp.obj
+
+scene_old.i: scene_old.cpp.i
+.PHONY : scene_old.i
+
+# target to preprocess a source file
+scene_old.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/scene_old.cpp.i
+.PHONY : scene_old.cpp.i
+
+scene_old.s: scene_old.cpp.s
+.PHONY : scene_old.s
+
+# target to generate assembly for a file
+scene_old.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/scene_old.cpp.s
+.PHONY : scene_old.cpp.s
 
 # Help Target
 help:
@@ -569,6 +643,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo_cubemap_blurring
 	@echo ... demo_environment_lighting
+	@echo ... demo_load_materials
 	@echo ... demo_moving_lights
 	@echo ... demo_nonrigid
 	@echo ... practical1
@@ -578,13 +653,17 @@ help:
 	@echo ... practical5
 	@echo ... practical6
 	@echo ... practical7
-	@echo ... scene
+	@echo ... scene2
+	@echo ... scene_old
 	@echo ... demo_cubemap_blurring.obj
 	@echo ... demo_cubemap_blurring.i
 	@echo ... demo_cubemap_blurring.s
 	@echo ... demo_environment_lighting.obj
 	@echo ... demo_environment_lighting.i
 	@echo ... demo_environment_lighting.s
+	@echo ... demo_load_materials.obj
+	@echo ... demo_load_materials.i
+	@echo ... demo_load_materials.s
 	@echo ... demo_moving_lights.obj
 	@echo ... demo_moving_lights.i
 	@echo ... demo_moving_lights.s
@@ -612,9 +691,12 @@ help:
 	@echo ... practical7.obj
 	@echo ... practical7.i
 	@echo ... practical7.s
-	@echo ... scene.obj
-	@echo ... scene.i
-	@echo ... scene.s
+	@echo ... scene2.obj
+	@echo ... scene2.i
+	@echo ... scene2.s
+	@echo ... scene_old.obj
+	@echo ... scene_old.i
+	@echo ... scene_old.s
 .PHONY : help
 
 

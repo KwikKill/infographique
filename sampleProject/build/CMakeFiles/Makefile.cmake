@@ -65,6 +65,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/demo_cubemap_blurring.dir/DependInfo.cmake"
   "CMakeFiles/demo_environment_lighting.dir/DependInfo.cmake"
+  "CMakeFiles/demo_load_materials.dir/DependInfo.cmake"
   "CMakeFiles/demo_moving_lights.dir/DependInfo.cmake"
   "CMakeFiles/demo_nonrigid.dir/DependInfo.cmake"
   "CMakeFiles/practical1.dir/DependInfo.cmake"
@@ -74,5 +75,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practical5.dir/DependInfo.cmake"
   "CMakeFiles/practical6.dir/DependInfo.cmake"
   "CMakeFiles/practical7.dir/DependInfo.cmake"
-  "CMakeFiles/scene.dir/DependInfo.cmake"
+  "CMakeFiles/scene2.dir/DependInfo.cmake"
+  "CMakeFiles/scene_old.dir/DependInfo.cmake"
   )

@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = C:\Users\gabri\Documents\dev\infographique\sampleProject\buil
 # The main recursive "all" target.
 all: CMakeFiles/demo_cubemap_blurring.dir/all
 all: CMakeFiles/demo_environment_lighting.dir/all
+all: CMakeFiles/demo_load_materials.dir/all
 all: CMakeFiles/demo_moving_lights.dir/all
 all: CMakeFiles/demo_nonrigid.dir/all
 all: CMakeFiles/practical1.dir/all
@@ -73,12 +74,14 @@ all: CMakeFiles/practical4.dir/all
 all: CMakeFiles/practical5.dir/all
 all: CMakeFiles/practical6.dir/all
 all: CMakeFiles/practical7.dir/all
-all: CMakeFiles/scene.dir/all
+all: CMakeFiles/scene2.dir/all
+all: CMakeFiles/scene_old.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/demo_cubemap_blurring.dir/codegen
 codegen: CMakeFiles/demo_environment_lighting.dir/codegen
+codegen: CMakeFiles/demo_load_materials.dir/codegen
 codegen: CMakeFiles/demo_moving_lights.dir/codegen
 codegen: CMakeFiles/demo_nonrigid.dir/codegen
 codegen: CMakeFiles/practical1.dir/codegen
@@ -88,7 +91,8 @@ codegen: CMakeFiles/practical4.dir/codegen
 codegen: CMakeFiles/practical5.dir/codegen
 codegen: CMakeFiles/practical6.dir/codegen
 codegen: CMakeFiles/practical7.dir/codegen
-codegen: CMakeFiles/scene.dir/codegen
+codegen: CMakeFiles/scene2.dir/codegen
+codegen: CMakeFiles/scene_old.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -98,6 +102,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/demo_cubemap_blurring.dir/clean
 clean: CMakeFiles/demo_environment_lighting.dir/clean
+clean: CMakeFiles/demo_load_materials.dir/clean
 clean: CMakeFiles/demo_moving_lights.dir/clean
 clean: CMakeFiles/demo_nonrigid.dir/clean
 clean: CMakeFiles/practical1.dir/clean
@@ -107,7 +112,8 @@ clean: CMakeFiles/practical4.dir/clean
 clean: CMakeFiles/practical5.dir/clean
 clean: CMakeFiles/practical6.dir/clean
 clean: CMakeFiles/practical7.dir/clean
-clean: CMakeFiles/scene.dir/clean
+clean: CMakeFiles/scene2.dir/clean
+clean: CMakeFiles/scene_old.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -173,13 +179,44 @@ CMakeFiles/demo_environment_lighting.dir/clean:
 .PHONY : CMakeFiles/demo_environment_lighting.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/demo_load_materials.dir
+
+# All Build rule for target.
+CMakeFiles/demo_load_materials.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=5,6 "Built target demo_load_materials"
+.PHONY : CMakeFiles/demo_load_materials.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/demo_load_materials.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/demo_load_materials.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles 0
+.PHONY : CMakeFiles/demo_load_materials.dir/rule
+
+# Convenience name for target.
+demo_load_materials: CMakeFiles/demo_load_materials.dir/rule
+.PHONY : demo_load_materials
+
+# codegen rule for target.
+CMakeFiles/demo_load_materials.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/codegen
+.PHONY : CMakeFiles/demo_load_materials.dir/codegen
+
+# clean rule for target.
+CMakeFiles/demo_load_materials.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_load_materials.dir\build.make CMakeFiles/demo_load_materials.dir/clean
+.PHONY : CMakeFiles/demo_load_materials.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/demo_moving_lights.dir
 
 # All Build rule for target.
 CMakeFiles/demo_moving_lights.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_moving_lights.dir\build.make CMakeFiles/demo_moving_lights.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_moving_lights.dir\build.make CMakeFiles/demo_moving_lights.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=5,6 "Built target demo_moving_lights"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=7,8 "Built target demo_moving_lights"
 .PHONY : CMakeFiles/demo_moving_lights.dir/all
 
 # Build rule for subdir invocation for target.
@@ -210,7 +247,7 @@ CMakeFiles/demo_moving_lights.dir/clean:
 CMakeFiles/demo_nonrigid.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_nonrigid.dir\build.make CMakeFiles/demo_nonrigid.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_nonrigid.dir\build.make CMakeFiles/demo_nonrigid.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=7,8 "Built target demo_nonrigid"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=9,10 "Built target demo_nonrigid"
 .PHONY : CMakeFiles/demo_nonrigid.dir/all
 
 # Build rule for subdir invocation for target.
@@ -241,7 +278,7 @@ CMakeFiles/demo_nonrigid.dir/clean:
 CMakeFiles/practical1.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical1.dir\build.make CMakeFiles/practical1.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical1.dir\build.make CMakeFiles/practical1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=9,10 "Built target practical1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=11,12 "Built target practical1"
 .PHONY : CMakeFiles/practical1.dir/all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +309,7 @@ CMakeFiles/practical1.dir/clean:
 CMakeFiles/practical2.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical2.dir\build.make CMakeFiles/practical2.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical2.dir\build.make CMakeFiles/practical2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=11,12 "Built target practical2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=13,14 "Built target practical2"
 .PHONY : CMakeFiles/practical2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -303,7 +340,7 @@ CMakeFiles/practical2.dir/clean:
 CMakeFiles/practical3.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical3.dir\build.make CMakeFiles/practical3.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical3.dir\build.make CMakeFiles/practical3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=13,14 "Built target practical3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=15,16 "Built target practical3"
 .PHONY : CMakeFiles/practical3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -334,7 +371,7 @@ CMakeFiles/practical3.dir/clean:
 CMakeFiles/practical4.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical4.dir\build.make CMakeFiles/practical4.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical4.dir\build.make CMakeFiles/practical4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=15,16 "Built target practical4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=17,18 "Built target practical4"
 .PHONY : CMakeFiles/practical4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -365,7 +402,7 @@ CMakeFiles/practical4.dir/clean:
 CMakeFiles/practical5.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical5.dir\build.make CMakeFiles/practical5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical5.dir\build.make CMakeFiles/practical5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=17,18 "Built target practical5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=19,20 "Built target practical5"
 .PHONY : CMakeFiles/practical5.dir/all
 
 # Build rule for subdir invocation for target.
@@ -396,7 +433,7 @@ CMakeFiles/practical5.dir/clean:
 CMakeFiles/practical6.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical6.dir\build.make CMakeFiles/practical6.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical6.dir\build.make CMakeFiles/practical6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=19,20 "Built target practical6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=21,22 "Built target practical6"
 .PHONY : CMakeFiles/practical6.dir/all
 
 # Build rule for subdir invocation for target.
@@ -427,7 +464,7 @@ CMakeFiles/practical6.dir/clean:
 CMakeFiles/practical7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=21,22 "Built target practical7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=23,24 "Built target practical7"
 .PHONY : CMakeFiles/practical7.dir/all
 
 # Build rule for subdir invocation for target.
@@ -452,35 +489,66 @@ CMakeFiles/practical7.dir/clean:
 .PHONY : CMakeFiles/practical7.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/scene.dir
+# Target rules for target CMakeFiles/scene2.dir
 
 # All Build rule for target.
-CMakeFiles/scene.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=23,24 "Built target scene"
-.PHONY : CMakeFiles/scene.dir/all
+CMakeFiles/scene2.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=25,26 "Built target scene2"
+.PHONY : CMakeFiles/scene2.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/scene.dir/rule: cmake_check_build_system
+CMakeFiles/scene2.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/scene.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/scene2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles 0
-.PHONY : CMakeFiles/scene.dir/rule
+.PHONY : CMakeFiles/scene2.dir/rule
 
 # Convenience name for target.
-scene: CMakeFiles/scene.dir/rule
-.PHONY : scene
+scene2: CMakeFiles/scene2.dir/rule
+.PHONY : scene2
 
 # codegen rule for target.
-CMakeFiles/scene.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/codegen
-.PHONY : CMakeFiles/scene.dir/codegen
+CMakeFiles/scene2.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/codegen
+.PHONY : CMakeFiles/scene2.dir/codegen
 
 # clean rule for target.
-CMakeFiles/scene.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene.dir\build.make CMakeFiles/scene.dir/clean
-.PHONY : CMakeFiles/scene.dir/clean
+CMakeFiles/scene2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/clean
+.PHONY : CMakeFiles/scene2.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/scene_old.dir
+
+# All Build rule for target.
+CMakeFiles/scene_old.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles --progress-num=27,28 "Built target scene_old"
+.PHONY : CMakeFiles/scene_old.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/scene_old.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/scene_old.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\gabri\Documents\dev\infographique\sampleProject\build\CMakeFiles 0
+.PHONY : CMakeFiles/scene_old.dir/rule
+
+# Convenience name for target.
+scene_old: CMakeFiles/scene_old.dir/rule
+.PHONY : scene_old
+
+# codegen rule for target.
+CMakeFiles/scene_old.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/codegen
+.PHONY : CMakeFiles/scene_old.dir/codegen
+
+# clean rule for target.
+CMakeFiles/scene_old.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/clean
+.PHONY : CMakeFiles/scene_old.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

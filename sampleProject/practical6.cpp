@@ -90,6 +90,13 @@ void initialize_scene( Viewer& viewer )
     SpotLightRenderablePtr spotLightRenderable = std::make_shared<SpotLightRenderable>(flatShader, spotLight);
     localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
     spotLightRenderable->setLocalTransform(localTransformation);
+
+    spotLight->addGlobalTransformKeyframe(lookAtModel(glm::vec3(3,5,3), glm::vec3(0), Light::base_forward), 0);
+    spotLight->addGlobalTransformKeyframe(lookAtModel(glm::vec3(-3,5,3), glm::vec3(0), Light::base_forward), 3);
+    spotLight->addGlobalTransformKeyframe(lookAtModel(glm::vec3(-3,5,-3), glm::vec3(0), Light::base_forward), 6);
+    spotLight->addGlobalTransformKeyframe(lookAtModel(glm::vec3(3,5,-3), glm::vec3(0), Light::base_forward), 9);
+    spotLight->addGlobalTransformKeyframe(lookAtModel(glm::vec3(3,5,3), glm::vec3(0), Light::base_forward), 12);
+
     viewer.addSpotLight(spotLight);
     viewer.addRenderable(spotLightRenderable);
 
@@ -128,13 +135,14 @@ void initialize_scene( Viewer& viewer )
     viewer.addRenderable( suzanne2 );
 
     viewer.startAnimation();
-    viewer.setAnimationLoop(true, 4.0);
+    //viewer.setAnimationLoop(true, 4.0);
 }
 
 int main() 
 {
 	Viewer viewer(1280,720, glm::vec4(0.8,0.8,0.8,1));
 	initialize_scene(viewer);
+    //viewer.startAnimation();
 
 	while( viewer.isRunning() )
 	{

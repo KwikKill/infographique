@@ -351,6 +351,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj
  c:\users\gabri\documents\dev\infographique\sfmlgraphicspipeline\include\gl_helper.hpp \
  c:\users\gabri\documents\dev\infographique\sfmlgraphicspipeline\include\log.hpp \
  c:\users\gabri\documents\dev\infographique\sfmlgraphicspipeline\include\io.hpp \
+ C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/lighting/Material.hpp \
  c:\users\gabri\documents\dev\infographique\sfmlgraphicspipeline\include\utils.hpp \
  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/gtc/type_ptr.hpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstring \

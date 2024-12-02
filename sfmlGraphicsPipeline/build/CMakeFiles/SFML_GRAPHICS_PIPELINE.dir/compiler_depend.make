@@ -2575,6 +2575,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/IndexedCubeRenderable.cpp.obj: C:/User
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Io.cpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glew-1.13.0/include/GL/glew.h \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/common.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/detail/_fixes.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/detail/_vectorize.hpp \
@@ -2650,11 +2651,15 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vec4.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/vector_relational.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/tinyobjloader/tiny_obj_loader.h \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/lighting/Material.hpp \
   C:/MinGW/include/_mingw.h \
   C:/MinGW/include/assert.h \
   C:/MinGW/include/ctype.h \
   C:/MinGW/include/errno.h \
   C:/MinGW/include/float.h \
+  C:/MinGW/include/GL/gl.h \
+  C:/MinGW/include/GL/glu.h \
+  C:/MinGW/include/inttypes.h \
   C:/MinGW/include/limits.h \
   C:/MinGW/include/locale.h \
   C:/MinGW/include/math.h \
@@ -2670,9 +2675,12 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/include/wchar.h \
   C:/MinGW/include/wctype.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/array \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/auto_ptr.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocated_ptr.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_base.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/atomic_lockfree_defines.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/basic_ios.tcc \
@@ -2689,6 +2697,8 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hash_bytes.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/hashtable_policy.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ios_base.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/istream.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.h \
@@ -2705,6 +2715,9 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/predefined_ops.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/sstream.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
@@ -2716,13 +2729,17 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_map.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_multimap.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_raw_storage_iter.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tree.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_uninitialized.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_vector.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unique_ptr.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/bits/vector.tcc \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cassert \
@@ -2737,6 +2754,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdio \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstdlib \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cstring \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ctime \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwchar \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/cwctype \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/debug/assertions.h \
@@ -2745,11 +2763,13 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/aligned_buffer.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/alloc_traits.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/atomicity.h \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/concurrence.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/new_allocator.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/numeric_traits.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/fstream \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/functional \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/initializer_list \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/ios \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/iosfwd \
@@ -2757,6 +2777,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/istream \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/limits \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/map \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/memory \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/atomic_word.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/basic_file.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/c++allocator.h \
@@ -2779,13 +2800,18 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Io.cpp.obj: C:/Users/gabri/Documents/d
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/system_error \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/tuple \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/type_traits \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/typeinfo \
+  C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/unordered_map \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/utility \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/c++/vector \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/float.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdarg.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stddef.h \
   C:/MinGW/lib/gcc/mingw32/6.3.0/include/stdint.h \
-  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Io.hpp
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/gl_helper.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Io.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/log.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/ShaderProgram.hpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/KeyframeCollection.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/KeyframeCollection.cpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/extlib/glm-0.9.7.1/glm/common.hpp \
@@ -3507,6 +3533,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj: C:/Users/gabri
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Camera.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/KeyframedHierarchicalRenderable.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/lighting/Material.hpp \
   C:/MinGW/include/_mingw.h \
   C:/MinGW/include/assert.h \
   C:/MinGW/include/ctype.h \
@@ -3690,6 +3717,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/MeshRenderable.cpp.obj: C:/Users/gabri
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Io.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/log.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/MeshRenderable.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/ShaderProgram.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp
 
 CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/Plane.cpp.obj: C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/src/Plane.cpp \
@@ -12065,6 +12093,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/lighting/LightedMeshRenderable.cpp.obj
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Camera.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/KeyframedHierarchicalRenderable.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/lighting/Material.hpp \
   C:/MinGW/include/_mingw.h \
   C:/MinGW/include/assert.h \
   C:/MinGW/include/ctype.h \
@@ -15860,6 +15889,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedLightedMeshRenderabl
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Camera.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/KeyframedHierarchicalRenderable.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/lighting/Material.hpp \
   C:/MinGW/include/_mingw.h \
   C:/MinGW/include/assert.h \
   C:/MinGW/include/ctype.h \
@@ -16211,6 +16241,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.o
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Camera.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/KeyframedHierarchicalRenderable.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/lighting/Material.hpp \
   C:/MinGW/include/_mingw.h \
   C:/MinGW/include/assert.h \
   C:/MinGW/include/ctype.h \
@@ -16394,6 +16425,7 @@ CMakeFiles/SFML_GRAPHICS_PIPELINE.dir/src/texturing/TexturedMeshRenderable.cpp.o
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Io.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/log.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/MeshRenderable.hpp \
+  C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/ShaderProgram.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/texturing/TexturedMeshRenderable.hpp \
   C:/Users/gabri/Documents/dev/infographique/sfmlGraphicsPipeline/include/Utils.hpp
 
