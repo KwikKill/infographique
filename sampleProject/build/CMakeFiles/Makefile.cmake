@@ -76,5 +76,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/practical6.dir/DependInfo.cmake"
   "CMakeFiles/practical7.dir/DependInfo.cmake"
   "CMakeFiles/scene2.dir/DependInfo.cmake"
+  "CMakeFiles/scene3.dir/DependInfo.cmake"
   "CMakeFiles/scene_old.dir/DependInfo.cmake"
   )

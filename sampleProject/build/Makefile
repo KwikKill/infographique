@@ -285,6 +285,19 @@ scene2/fast:
 .PHONY : scene2/fast
 
 #=============================================================================
+# Target rules for targets named scene3
+
+# Build rule for target.
+scene3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene3
+.PHONY : scene3
+
+# fast build rule for target.
+scene3/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene3.dir\build.make CMakeFiles/scene3.dir/build
+.PHONY : scene3/fast
+
+#=============================================================================
 # Target rules for targets named scene_old
 
 # Build rule for target.
@@ -609,6 +622,30 @@ scene2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene2.dir\build.make CMakeFiles/scene2.dir/scene2.cpp.s
 .PHONY : scene2.cpp.s
 
+scene3.obj: scene3.cpp.obj
+.PHONY : scene3.obj
+
+# target to build an object file
+scene3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene3.dir\build.make CMakeFiles/scene3.dir/scene3.cpp.obj
+.PHONY : scene3.cpp.obj
+
+scene3.i: scene3.cpp.i
+.PHONY : scene3.i
+
+# target to preprocess a source file
+scene3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene3.dir\build.make CMakeFiles/scene3.dir/scene3.cpp.i
+.PHONY : scene3.cpp.i
+
+scene3.s: scene3.cpp.s
+.PHONY : scene3.s
+
+# target to generate assembly for a file
+scene3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene3.dir\build.make CMakeFiles/scene3.dir/scene3.cpp.s
+.PHONY : scene3.cpp.s
+
 scene_old.obj: scene_old.cpp.obj
 .PHONY : scene_old.obj
 
@@ -654,6 +691,7 @@ help:
 	@echo ... practical6
 	@echo ... practical7
 	@echo ... scene2
+	@echo ... scene3
 	@echo ... scene_old
 	@echo ... demo_cubemap_blurring.obj
 	@echo ... demo_cubemap_blurring.i
@@ -694,6 +732,9 @@ help:
 	@echo ... scene2.obj
 	@echo ... scene2.i
 	@echo ... scene2.s
+	@echo ... scene3.obj
+	@echo ... scene3.i
+	@echo ... scene3.s
 	@echo ... scene_old.obj
 	@echo ... scene_old.i
 	@echo ... scene_old.s

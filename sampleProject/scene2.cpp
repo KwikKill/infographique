@@ -19,7 +19,7 @@ void initialize_scene( Viewer& viewer )
     // Add the shader program to the viewer
     viewer.addShaderProgram( phong_shader );
 
-    const std::string obj_path = "../../good/obj/car.obj";
+    const std::string obj_path = "../../good/obj/voie.obj";
     const std::string mtl_basepath = "../../good/mtl/";
 
     std::vector<std::vector<glm::vec3>> all_positions;

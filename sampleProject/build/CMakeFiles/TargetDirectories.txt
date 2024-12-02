@@ -11,6 +11,7 @@ C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/practi
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/practical6.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/practical7.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene2.dir
+C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene3.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene_old.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/edit_cache.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/rebuild_cache.dir
