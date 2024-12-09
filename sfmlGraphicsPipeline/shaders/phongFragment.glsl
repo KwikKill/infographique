@@ -10,6 +10,8 @@ struct Material
     vec3 diffuse;
     vec3 specular;
     float shininess;
+    float optical_density;
+    float dissolve;
 };
 
 struct DirectionalLight
@@ -80,14 +82,16 @@ out vec4 outColor;
 //Phong illumination model for a directional light
 vec3 computeDirectionalLight(DirectionalLight light, vec3 surfel_to_camera)
 {
-    vec3 surfel_to_light = -light.direction;
+    vec3 surfel_to_light = normalize(-light.direction);
+    vec3 normalized_surfel_normal = normalize(surfel_normal);
+    vec3 normalized_surfel_to_camera = normalize(surfel_to_camera);
 
     // Diffuse shading
-    float diffuse_factor = max(dot(surfel_normal, surfel_to_light), 0.0);
+    float diffuse_factor = max(dot(normalized_surfel_normal, surfel_to_light), 0.0);
 
     // Specular
-    vec3 reflect_direction = reflect(-surfel_to_light, surfel_normal);
-    float specular_dot = clamp(dot(surfel_to_camera, reflect_direction), 0, 1);
+    vec3 reflect_direction = reflect(-surfel_to_light, normalized_surfel_normal);
+    float specular_dot = clamp(dot(normalized_surfel_to_camera, reflect_direction), 0, 1);
     float specular_factor = pow(specular_dot, material.shininess);
 
     // Combine results
@@ -113,7 +117,7 @@ vec3 computePointLight(PointLight light, vec3 surfel_to_camera)
     float specular_factor = pow(specular_dot, material.shininess);
 
     // Attenuation: TODO
-    float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * distance * distance);
+    float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * pow(distance, 2.0));
 
     // Combine results    
     vec3 ambient  = attenuation *                   light.ambient  * material.ambient ;
@@ -134,28 +138,23 @@ vec3 computeSpotLight(SpotLight light, vec3 surfel_to_camera)
     
     // Specular
     vec3 reflect_direction = reflect(-surfel_to_light, surfel_normal);
-    float specular_dot = clamp(dot(surfel_to_camera, reflect_direction), 0, 1);
+    float specular_dot = clamp(dot(surfel_to_camera, reflect_direction), 0.0, 1.0);
     float specular_factor = pow(specular_dot, material.shininess);
 
     // Spotlight (soft edges): TODO
-    float theta = dot(surfel_to_light, normalize(-light.spotDirection));
-    float epsilon = light.innerCutOff - light.outerCutOff;
-    float intensity = clamp((theta - light.outerCutOff) / epsilon, 0.0, 1.0);
-    
-    //float theta = dot(surfel_to_light, normalize(-light.spotDirection));
-    //float cutoff = cos(light.innerCutOff * 0.5); // Reduce the cutoff angle by half
-    //float intensity = (theta > cutoff) ? 1.0 : 0.0;
+    float intensity = clamp((dot(surfel_to_camera, reflect_direction) - light.outerCutOff)/(light.innerCutOff - light.outerCutOff), 0.0, 1.0);
 
     // Attenuation
-    float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * distance * distance);
+    float attenuation = 1.0 / (light.constant + light.linear * distance + light.quadratic * pow(distance, 2.0));
 
-    // Combine results    
-    vec3 ambient  =             attenuation *                   light.ambient  * material.ambient ;
-    vec3 diffuse  = intensity * attenuation * diffuse_factor  * light.diffuse  * material.diffuse ;
+    // Combine results
+    vec3 ambient  =             attenuation *                   light.ambient  * material.ambient;
+    vec3 diffuse  = intensity * attenuation * diffuse_factor  * light.diffuse  * material.diffuse;
     vec3 specular = intensity * attenuation * specular_factor * light.specular * material.specular;
-    
+
     return (ambient + diffuse + specular);
 }
+
 
 void main()
 {
@@ -177,5 +176,7 @@ void main()
     for(int i=0; i<clampedNumberOfSpotLight; ++i)
         tmpColor += computeSpotLight(spotLight[i], surfel_to_camera);
 
-    outColor = vec4(tmpColor,1.0);
+    //tmpColor *= material.optical_density;
+
+    outColor = vec4(tmpColor, 1.0);
 }

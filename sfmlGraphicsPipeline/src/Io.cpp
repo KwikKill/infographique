@@ -228,11 +228,13 @@ bool read_obj_with_materials_indexed(
 
     for (size_t i = 0; i < N; i++) {
         tinyobj::material_t tobj_mat = tobj_materials[i];
-        glm::vec3 ambient(tobj_mat.ambient[0], tobj_mat.ambient[1], tobj_mat.ambient[2]);
-        glm::vec3 diffuse(tobj_mat.diffuse[0], tobj_mat.diffuse[1], tobj_mat.diffuse[2]);
-        glm::vec3 specular(tobj_mat.specular[0], tobj_mat.specular[1], tobj_mat.specular[2]);
-        float shininess = tobj_mat.shininess;
-        MaterialPtr mat = std::make_shared<Material>(ambient, diffuse, specular, shininess);
+        glm::vec3 ambient(tobj_mat.ambient[0], tobj_mat.ambient[1], tobj_mat.ambient[2]); // Ka
+        glm::vec3 diffuse(tobj_mat.diffuse[0], tobj_mat.diffuse[1], tobj_mat.diffuse[2]); // Kd
+        glm::vec3 specular(tobj_mat.specular[0], tobj_mat.specular[1], tobj_mat.specular[2]); // Ks
+        float shininess = tobj_mat.shininess; // Ns
+        float optical_density = tobj_mat.ior; // Ni
+        float dissolve = tobj_mat.dissolve; // d
+        MaterialPtr mat = std::make_shared<Material>(ambient, diffuse, specular, shininess, optical_density, dissolve);
         materials.push_back(mat);
     }
 

@@ -35,11 +35,13 @@ void initialize_scene( Viewer& viewer )
 
 
     { // Exercice 1 : Textured bunny
+        /*
         viewer.getCamera().setViewMatrix( glm::lookAt( glm::vec3(0, 0, 2 ), glm::vec3(0, 0, 0), glm::vec3( 0, 1, 0 ) ) );
         std::string bunny_mesh_path = "./../../sfmlGraphicsPipeline/meshes/bunny.obj";
         std::string bunny_texture_path = "./../../sfmlGraphicsPipeline/textures/bunny_texture.png";
         auto bunny = std::make_shared<TexturedMeshRenderable>(texShader, bunny_mesh_path, bunny_texture_path);
         viewer.addRenderable(bunny);
+        */
     }
 
     
@@ -95,7 +97,7 @@ void initialize_scene( Viewer& viewer )
         */
     }
     { // Exercice 6 : cubemap
-        /*
+        
         viewer.getCamera().setViewMatrix( glm::lookAt( glm::vec3(1, 1, 1 ), glm::vec3(0, 0, 0), glm::vec3( 0, 1, 0 ) ) );
         ShaderProgramPtr cubeMapShader = std::make_shared<ShaderProgram>(  "../../sfmlGraphicsPipeline/shaders/cubeMapVertex.glsl",
                                                                     "../../sfmlGraphicsPipeline/shaders/cubeMapFragment.glsl");
@@ -105,7 +107,7 @@ void initialize_scene( Viewer& viewer )
         auto cubemap = std::make_shared<CubeMapRenderable>(cubeMapShader, cubemap_dir);
 
         viewer.addRenderable(cubemap);
-        */
+        
     }
 }
 

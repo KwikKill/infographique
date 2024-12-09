@@ -181,6 +181,32 @@ demo_nonrigid/fast:
 .PHONY : demo_nonrigid/fast
 
 #=============================================================================
+# Target rules for targets named demo_soft_body
+
+# Build rule for target.
+demo_soft_body: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 demo_soft_body
+.PHONY : demo_soft_body
+
+# fast build rule for target.
+demo_soft_body/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_soft_body.dir\build.make CMakeFiles/demo_soft_body.dir/build
+.PHONY : demo_soft_body/fast
+
+#=============================================================================
+# Target rules for targets named playground
+
+# Build rule for target.
+playground: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 playground
+.PHONY : playground
+
+# fast build rule for target.
+playground/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/build
+.PHONY : playground/fast
+
+#=============================================================================
 # Target rules for targets named practical1
 
 # Build rule for target.
@@ -270,6 +296,19 @@ practical7: cmake_check_build_system
 practical7/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/build
 .PHONY : practical7/fast
+
+#=============================================================================
+# Target rules for targets named scene1
+
+# Build rule for target.
+scene1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene1
+.PHONY : scene1
+
+# fast build rule for target.
+scene1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene1.dir\build.make CMakeFiles/scene1.dir/build
+.PHONY : scene1/fast
 
 #=============================================================================
 # Target rules for targets named scene2
@@ -429,6 +468,54 @@ demo_nonrigid.s: demo_nonrigid.cpp.s
 demo_nonrigid.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_nonrigid.dir\build.make CMakeFiles/demo_nonrigid.dir/demo_nonrigid.cpp.s
 .PHONY : demo_nonrigid.cpp.s
+
+demo_soft_body.obj: demo_soft_body.cpp.obj
+.PHONY : demo_soft_body.obj
+
+# target to build an object file
+demo_soft_body.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_soft_body.dir\build.make CMakeFiles/demo_soft_body.dir/demo_soft_body.cpp.obj
+.PHONY : demo_soft_body.cpp.obj
+
+demo_soft_body.i: demo_soft_body.cpp.i
+.PHONY : demo_soft_body.i
+
+# target to preprocess a source file
+demo_soft_body.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_soft_body.dir\build.make CMakeFiles/demo_soft_body.dir/demo_soft_body.cpp.i
+.PHONY : demo_soft_body.cpp.i
+
+demo_soft_body.s: demo_soft_body.cpp.s
+.PHONY : demo_soft_body.s
+
+# target to generate assembly for a file
+demo_soft_body.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_soft_body.dir\build.make CMakeFiles/demo_soft_body.dir/demo_soft_body.cpp.s
+.PHONY : demo_soft_body.cpp.s
+
+playground.obj: playground.cpp.obj
+.PHONY : playground.obj
+
+# target to build an object file
+playground.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/playground.cpp.obj
+.PHONY : playground.cpp.obj
+
+playground.i: playground.cpp.i
+.PHONY : playground.i
+
+# target to preprocess a source file
+playground.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/playground.cpp.i
+.PHONY : playground.cpp.i
+
+playground.s: playground.cpp.s
+.PHONY : playground.s
+
+# target to generate assembly for a file
+playground.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\playground.dir\build.make CMakeFiles/playground.dir/playground.cpp.s
+.PHONY : playground.cpp.s
 
 practical1.obj: practical1.cpp.obj
 .PHONY : practical1.obj
@@ -598,6 +685,30 @@ practical7.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practical7.dir\build.make CMakeFiles/practical7.dir/practical7.cpp.s
 .PHONY : practical7.cpp.s
 
+scene1.obj: scene1.cpp.obj
+.PHONY : scene1.obj
+
+# target to build an object file
+scene1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene1.dir\build.make CMakeFiles/scene1.dir/scene1.cpp.obj
+.PHONY : scene1.cpp.obj
+
+scene1.i: scene1.cpp.i
+.PHONY : scene1.i
+
+# target to preprocess a source file
+scene1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene1.dir\build.make CMakeFiles/scene1.dir/scene1.cpp.i
+.PHONY : scene1.cpp.i
+
+scene1.s: scene1.cpp.s
+.PHONY : scene1.s
+
+# target to generate assembly for a file
+scene1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene1.dir\build.make CMakeFiles/scene1.dir/scene1.cpp.s
+.PHONY : scene1.cpp.s
+
 scene2.obj: scene2.cpp.obj
 .PHONY : scene2.obj
 
@@ -683,6 +794,8 @@ help:
 	@echo ... demo_load_materials
 	@echo ... demo_moving_lights
 	@echo ... demo_nonrigid
+	@echo ... demo_soft_body
+	@echo ... playground
 	@echo ... practical1
 	@echo ... practical2
 	@echo ... practical3
@@ -690,6 +803,7 @@ help:
 	@echo ... practical5
 	@echo ... practical6
 	@echo ... practical7
+	@echo ... scene1
 	@echo ... scene2
 	@echo ... scene3
 	@echo ... scene_old
@@ -708,6 +822,12 @@ help:
 	@echo ... demo_nonrigid.obj
 	@echo ... demo_nonrigid.i
 	@echo ... demo_nonrigid.s
+	@echo ... demo_soft_body.obj
+	@echo ... demo_soft_body.i
+	@echo ... demo_soft_body.s
+	@echo ... playground.obj
+	@echo ... playground.i
+	@echo ... playground.s
 	@echo ... practical1.obj
 	@echo ... practical1.i
 	@echo ... practical1.s
@@ -729,6 +849,9 @@ help:
 	@echo ... practical7.obj
 	@echo ... practical7.i
 	@echo ... practical7.s
+	@echo ... scene1.obj
+	@echo ... scene1.i
+	@echo ... scene1.s
 	@echo ... scene2.obj
 	@echo ... scene2.i
 	@echo ... scene2.s

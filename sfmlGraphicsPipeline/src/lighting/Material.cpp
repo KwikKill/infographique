@@ -10,14 +10,18 @@ Material::Material()
     m_diffuse = glm::vec3(0.0,0.0,0.0);
     m_specular = glm::vec3(0.0,0.0,0.0);
     m_shininess = 0.0;
+    m_optical_density = 1.0;
+    m_dissolve = 1.0;
 }
 
-Material::Material(const glm::vec3& ambient, const glm::vec3& diffuse, const glm::vec3& specular, const float &shininess)
+Material::Material(const glm::vec3& ambient, const glm::vec3& diffuse, const glm::vec3& specular, const float &shininess, const float &optical_density, const float &dissolve)
 {
     m_ambient = ambient;
     m_diffuse = diffuse;
     m_specular = specular;
     m_shininess = shininess;
+    m_optical_density = optical_density;
+    m_dissolve = dissolve;
 }
 
 Material::Material(const Material& material)
@@ -68,6 +72,26 @@ const float &Material::shininess() const
     return m_shininess;
 }
 
+const float &Material::getOpticalDensity() const
+{
+    return m_optical_density;
+}
+
+void Material::setOpticalDensity(float optical_density)
+{
+    m_optical_density = optical_density;
+}
+
+const float &Material::getDissolve() const
+{
+    return m_dissolve;
+}
+
+void Material::setDissolve(float dissolve)
+{
+    m_dissolve = dissolve;
+}
+
 bool Material::sendToGPU(const ShaderProgramPtr& program, const MaterialPtr &material)
 {
     bool success = true;
@@ -114,6 +138,26 @@ bool Material::sendToGPU(const ShaderProgramPtr& program, const MaterialPtr &mat
         // Just a small hack for pow(0,0) = NaN on NVidia hardware
         float actual_shininess = std::max(1e-4f, material->shininess());
         glcheck(glUniform1f(location, actual_shininess));
+    }
+    else
+    {
+        success = false;
+    }
+
+    location = program->getUniformLocation("material.optical_density");
+    if(location!=ShaderProgram::null_location)
+    {
+        glcheck(glUniform1f(location, material->getOpticalDensity()));
+    }
+    else
+    {
+        success = false;
+    }
+
+    location = program->getUniformLocation("material.dissolve");
+    if(location!=ShaderProgram::null_location)
+    {
+        glcheck(glUniform1f(location, material->getDissolve()));
     }
     else
     {
