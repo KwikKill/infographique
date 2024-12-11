@@ -35,10 +35,17 @@ void initialize_scene( Viewer& viewer )
 
 
     { // Exercice 1 : Textured bunny
+        
+        viewer.getCamera().setViewMatrix( glm::lookAt( glm::vec3(0, 0, 2 ), glm::vec3(0, 0, 0), glm::vec3( 0, 1, 0 ) ) );
+        std::string bunny_mesh_path = "./../../good/obj/bunny.obj";
+        std::string bunny_texture_path = "./../../sfmlGraphicsPipeline/textures/bunny_texture.png";
+        auto bunny = std::make_shared<TexturedMeshRenderable>(texShader, bunny_mesh_path, bunny_texture_path);
+        viewer.addRenderable(bunny);
+        
         /*
         viewer.getCamera().setViewMatrix( glm::lookAt( glm::vec3(0, 0, 2 ), glm::vec3(0, 0, 0), glm::vec3( 0, 1, 0 ) ) );
-        std::string bunny_mesh_path = "./../../sfmlGraphicsPipeline/meshes/bunny.obj";
-        std::string bunny_texture_path = "./../../sfmlGraphicsPipeline/textures/bunny_texture.png";
+        std::string bunny_mesh_path = "./../../good/obj/ground2.obj";
+        std::string bunny_texture_path = "../../good/texture/text_ground2.png";
         auto bunny = std::make_shared<TexturedMeshRenderable>(texShader, bunny_mesh_path, bunny_texture_path);
         viewer.addRenderable(bunny);
         */

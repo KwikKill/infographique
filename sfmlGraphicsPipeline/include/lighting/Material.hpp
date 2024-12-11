@@ -167,6 +167,24 @@ public:
      */
     static MaterialPtr Bronze();
 
+    /**
+     * @brief Construct a grass meterial
+     * @return A grass material.
+     */
+    static MaterialPtr Grass();
+
+    /**
+     * @brief Construct a glass material
+     * @return A glass material.
+     */
+    static MaterialPtr Glass();
+
+    /**
+     * @brief Construct a ground material
+     * @return A ground material.
+     */
+    static MaterialPtr Ground();
+
 private:
     glm::vec3 m_ambient; /*!< The ambient material vector defines what color this object reflects under ambient lighting. */
     glm::vec3 m_diffuse; /*!< The diffuse material vector defines the color of the object under diffuse lighting. */

@@ -196,3 +196,33 @@ MaterialPtr Material::Bronze()
     float shininess = openGLFactor*0.2;
     return std::make_shared<Material>(ambient, diffuse, specular, shininess);
 }
+
+MaterialPtr Material::Grass()
+{
+    float openGLFactor = 128.0;
+    glm::vec3 ambient(0.3, 0.3, 0.3); 
+    glm::vec3 diffuse(0.8, 1.0, 0.8); 
+    glm::vec3 specular(0.3, 1.0, 0.3);
+    float shininess = openGLFactor * 0.078125;
+    return std::make_shared<Material>(ambient, diffuse, specular, shininess);
+}
+
+MaterialPtr Material::Glass()
+{
+    float openGLFactor=128.0;
+    glm::vec3 ambient(0.0, 0.0, 0.0);
+    glm::vec3 diffuse(0.588235, 0.670588, 0.729412);
+    glm::vec3 specular(0.9, 0.9, 0.9);
+    float shininess = openGLFactor*0.6;
+    return std::make_shared<Material>(ambient, diffuse, specular, shininess, 1.5, 0.0);
+}
+
+MaterialPtr Material::Ground()
+{
+    float openGLFactor = 128.0;
+    glm::vec3 ambient(0.4, 0.4, 0.4);
+    glm::vec3 diffuse(0.6, 0.6, 0.5); 
+    glm::vec3 specular(0.2, 0.2, 0.2); 
+    float shininess = openGLFactor * 0.1; 
+    return std::make_shared<Material>(ambient, diffuse, specular, shininess);
+}

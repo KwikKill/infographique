@@ -80,5 +80,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/scene1.dir/DependInfo.cmake"
   "CMakeFiles/scene2.dir/DependInfo.cmake"
   "CMakeFiles/scene3.dir/DependInfo.cmake"
+  "CMakeFiles/scene4.dir/DependInfo.cmake"
   "CMakeFiles/scene_old.dir/DependInfo.cmake"
+  "CMakeFiles/test.dir/DependInfo.cmake"
   )
