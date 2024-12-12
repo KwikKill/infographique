@@ -35,16 +35,6 @@
 const std::string texture_path = "../../good/mtl/";
 
 
-TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string image_path) {
-    // Add the pinguin
-    const std::string pinguin_path = "../../good/obj/pinguin.obj";
-
-    TexturedMeshRenderablePtr root_pinguin = std::make_shared<TexturedMeshRenderable>(
-        texShader, pinguin_path, image_path
-    );
-
-    return root_pinguin;
-}
 
 LightedMeshRenderablePtr init_pinguin_glasses(ShaderProgramPtr phong_shader) {
     // Add the pinguin glasses
@@ -73,6 +63,16 @@ LightedMeshRenderablePtr init_pinguin_glasses(ShaderProgramPtr phong_shader) {
     return root_pinguin_glasses;
 }
 
+TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string image_path) {
+    // Add the pinguin
+    const std::string pinguin_path = "../../good/obj/pinguin.obj";
+
+    TexturedMeshRenderablePtr root_pinguin = std::make_shared<TexturedMeshRenderable>(
+        texShader, pinguin_path, image_path
+    );
+
+    return root_pinguin;
+}
 
 LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgramPtr texShader, bool rotation) {
     // Add the car
@@ -308,6 +308,12 @@ TexturedLightedMeshRenderablePtr init_traing_interior(ShaderProgramPtr texShader
             wand4->addGlobalTransformKeyframe(translation * getRotationMatrix(-3.14 / 24, glm::vec3(0, 0, 1)), 1);
             wand4->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 2);
             HierarchicalRenderable::addChild(penguin, wand4);
+            // Add the glasses
+            LightedMeshRenderablePtr pinguin_glasses = init_pinguin_glasses(phong_shader);
+            pinguin_glasses->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1))*getScaleMatrix(0.8, 0.8, 0.8), 0);
+            pinguin_glasses->addGlobalTransformKeyframe(translation * getRotationMatrix(-3.14 / 24, glm::vec3(0, 0, 1))*getScaleMatrix(0.8, 0.8, 0.8), 1);
+            pinguin_glasses->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1))*getScaleMatrix(0.8, 0.8, 0.8), 2);
+            HierarchicalRenderable::addChild(penguin, pinguin_glasses);
         } 
 
         penguin->addLocalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1))*getScaleMatrix(0.8, 0.8, 0.8), 0);

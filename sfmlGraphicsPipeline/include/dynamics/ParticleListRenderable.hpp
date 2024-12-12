@@ -31,7 +31,7 @@ public:
     ParticleListRenderable(ShaderProgramPtr program, std::vector<ParticlePtr>& particles, unsigned int strips=10u, unsigned int slices=20u);
     
     void update_all_buffers();
-
+    void setColor(glm::vec4 color);
 
 protected:
     void do_draw();

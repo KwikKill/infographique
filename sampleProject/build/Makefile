@@ -350,6 +350,32 @@ scene4/fast:
 .PHONY : scene4/fast
 
 #=============================================================================
+# Target rules for targets named scene5
+
+# Build rule for target.
+scene5: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene5
+.PHONY : scene5
+
+# fast build rule for target.
+scene5/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene5.dir\build.make CMakeFiles/scene5.dir/build
+.PHONY : scene5/fast
+
+#=============================================================================
+# Target rules for targets named scene6
+
+# Build rule for target.
+scene6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene6
+.PHONY : scene6
+
+# fast build rule for target.
+scene6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene6.dir\build.make CMakeFiles/scene6.dir/build
+.PHONY : scene6/fast
+
+#=============================================================================
 # Target rules for targets named scene_old
 
 # Build rule for target.
@@ -807,6 +833,54 @@ scene4.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene4.dir\build.make CMakeFiles/scene4.dir/scene4.cpp.s
 .PHONY : scene4.cpp.s
 
+scene5.obj: scene5.cpp.obj
+.PHONY : scene5.obj
+
+# target to build an object file
+scene5.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene5.dir\build.make CMakeFiles/scene5.dir/scene5.cpp.obj
+.PHONY : scene5.cpp.obj
+
+scene5.i: scene5.cpp.i
+.PHONY : scene5.i
+
+# target to preprocess a source file
+scene5.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene5.dir\build.make CMakeFiles/scene5.dir/scene5.cpp.i
+.PHONY : scene5.cpp.i
+
+scene5.s: scene5.cpp.s
+.PHONY : scene5.s
+
+# target to generate assembly for a file
+scene5.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene5.dir\build.make CMakeFiles/scene5.dir/scene5.cpp.s
+.PHONY : scene5.cpp.s
+
+scene6.obj: scene6.cpp.obj
+.PHONY : scene6.obj
+
+# target to build an object file
+scene6.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene6.dir\build.make CMakeFiles/scene6.dir/scene6.cpp.obj
+.PHONY : scene6.cpp.obj
+
+scene6.i: scene6.cpp.i
+.PHONY : scene6.i
+
+# target to preprocess a source file
+scene6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene6.dir\build.make CMakeFiles/scene6.dir/scene6.cpp.i
+.PHONY : scene6.cpp.i
+
+scene6.s: scene6.cpp.s
+.PHONY : scene6.s
+
+# target to generate assembly for a file
+scene6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene6.dir\build.make CMakeFiles/scene6.dir/scene6.cpp.s
+.PHONY : scene6.cpp.s
+
 scene_old.obj: scene_old.cpp.obj
 .PHONY : scene_old.obj
 
@@ -881,6 +955,8 @@ help:
 	@echo ... scene2
 	@echo ... scene3
 	@echo ... scene4
+	@echo ... scene5
+	@echo ... scene6
 	@echo ... scene_old
 	@echo ... test
 	@echo ... demo_cubemap_blurring.obj
@@ -937,6 +1013,12 @@ help:
 	@echo ... scene4.obj
 	@echo ... scene4.i
 	@echo ... scene4.s
+	@echo ... scene5.obj
+	@echo ... scene5.i
+	@echo ... scene5.s
+	@echo ... scene6.obj
+	@echo ... scene6.i
+	@echo ... scene6.s
 	@echo ... scene_old.obj
 	@echo ... scene_old.i
 	@echo ... scene_old.s

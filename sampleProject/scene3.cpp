@@ -46,6 +46,33 @@ TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string i
     return root_pinguin;
 }
 
+LightedMeshRenderablePtr init_rails(ShaderProgramPtr phong_shader) {
+    // Add the rails
+    const std::string rails_path = "../../good/obj/rails.obj";
+    std::vector<std::vector<glm::vec3>> all_positions_rails;
+    std::vector<std::vector<glm::vec3>> all_normals_rails;
+    std::vector<std::vector<glm::vec2>> all_texcoords_rails;
+    std::vector<std::vector<unsigned int>> all_indices_rails;
+    std::vector<MaterialPtr> materials_rails;
+
+    read_obj_with_materials(rails_path, texture_path, all_positions_rails, all_normals_rails, all_texcoords_rails, materials_rails);
+
+    int n_object_rails = materials_rails.size();
+    std::vector<glm::vec4> colors_rails;
+
+    LightedMeshRenderablePtr root_rails;
+
+    root_rails = std::make_shared<LightedMeshRenderable>(
+        phong_shader, all_positions_rails[0], all_normals_rails[0], colors_rails, materials_rails[0]);
+    for (int i = 1; i < n_object_rails; ++i) {
+        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
+            phong_shader, all_positions_rails[i], all_normals_rails[i], colors_rails, materials_rails[i]);
+        HierarchicalRenderable::addChild(root_rails, part);
+    }
+
+    return root_rails;
+}
+
 LightedMeshRenderablePtr init_traing_wheels(const std::string& path, const std::string& texture_path, ShaderProgramPtr shader, glm::vec3 translation, const std::vector<std::pair<glm::mat4, float>>& transformations) {
     std::vector<std::vector<glm::vec3>> all_positions;
     std::vector<std::vector<glm::vec3>> all_normals;
@@ -239,7 +266,7 @@ void scene3( Viewer& viewer )
 
     LightedMeshRenderablePtr traing = init_traing(phong_shader, 3, transformations);
     traing->addGlobalTransformKeyframe(getTranslationMatrix(60, 0, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -1, 0)),0);
-        traing->addGlobalTransformKeyframe(getTranslationMatrix(60, 0, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -1, 0)),3);
+    traing->addGlobalTransformKeyframe(getTranslationMatrix(60, 0, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -1, 0)),3);
     traing->addGlobalTransformKeyframe(getTranslationMatrix(0, 0, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -1, 0)),6);
     traing->addGlobalTransformKeyframe(getTranslationMatrix(-60, 0, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -1, 0)),9);
     viewer.addRenderable(traing);
@@ -287,12 +314,17 @@ void scene3( Viewer& viewer )
         }
     }
 
+    // Add the rails
+    LightedMeshRenderablePtr rails = init_rails(phong_shader);
+    rails->setGlobalTransform(getTranslationMatrix(0, 1.3, -5)*getScaleMatrix(4, 4, 4));
+    viewer.addRenderable(rails);
+
     // Add a pinguin
     TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../good/texture/pinguin_1.png");
-    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 2, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 0);
-    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 2, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 5.2);
-    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, -2, -5)*getRotationMatrix(3.14, glm::vec3(0, 0.25, 1)), 5.4);
-    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, -2, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 9);
+    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 2.3, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 0);
+    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 2.3, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 5.2);
+    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 1.3, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -0.5, 1)), 5.4);
+    pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 1.3, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -0.5, 1)), 9);
     pinguin->setLocalTransform(getScaleMatrix(4, 4, 4));
     viewer.addRenderable(pinguin);
 
