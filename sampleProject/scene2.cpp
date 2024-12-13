@@ -33,7 +33,7 @@
 #include <lighting/SpotLightRenderable.hpp>
 #include <lighting/PointLightRenderable.hpp>
 
-const std::string texture_path = "../../good/mtl/";
+const std::string texture_path = "../../assets/mtl/";
 
 LightedMeshRenderablePtr init_traing_wheels(const std::string& path, const std::string& texture_path, ShaderProgramPtr shader, glm::vec3 translation, const std::vector<std::pair<glm::mat4, float>>& transformations) {
     std::vector<std::vector<glm::vec3>> all_positions;
@@ -66,7 +66,7 @@ LightedMeshRenderablePtr init_traing_wheels(const std::string& path, const std::
 
 LightedMeshRenderablePtr init_wagon( ShaderProgramPtr phong_shader) {
     // Add the car
-    const std::string wagon_path = "../../good/obj/wagon.obj";
+    const std::string wagon_path = "../../assets/obj/wagon.obj";
     std::vector<std::vector<glm::vec3>> all_positions_wagon;
     std::vector<std::vector<glm::vec3>> all_normals_wagon;
     std::vector<std::vector<glm::vec2>> all_texcoords_wagon;
@@ -93,7 +93,7 @@ LightedMeshRenderablePtr init_wagon( ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon, const std::vector<std::pair<glm::mat4, float>>& transformations) {
     // Add the traing
-    const std::string traing_path = "../../good/obj/ossature_train_finale.obj";
+    const std::string traing_path = "../../assets/obj/ossature_train_finale.obj";
     std::vector<std::vector<glm::vec3>> all_positions_traing;
     std::vector<std::vector<glm::vec3>> all_normals_traing;
     std::vector<std::vector<glm::vec2>> all_texcoords_traing;
@@ -115,8 +115,8 @@ LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon
         HierarchicalRenderable::addChild(root_traing, part);
     }
 
-    const std::string roues_traing_path = "../../good/obj/petites_roues_train.obj";
-    const std::string roues_arriere_traing_path = "../../good/obj/grandes_roues_train.obj";
+    const std::string roues_traing_path = "../../assets/obj/petites_roues_train.obj";
+    const std::string roues_arriere_traing_path = "../../assets/obj/grandes_roues_train.obj";
     std::vector<glm::vec3> translations = {
         glm::vec3(-5.3, 2, -0.1),
         glm::vec3(-1, 2, -0.1),
@@ -154,7 +154,7 @@ LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon
 
 LightedMeshRenderablePtr init_wall ( ShaderProgramPtr phong_shader) {
     // Add the wall
-    const std::string wall_obj_path = "../../good/obj/wall_final.obj";
+    const std::string wall_obj_path = "../../assets/obj/wall_final.obj";
     std::vector<std::vector<glm::vec3>> wall_positions;
     std::vector<std::vector<glm::vec3>> wall_normals;
     std::vector<std::vector<glm::vec2>> wall_texcoords;
@@ -180,7 +180,7 @@ LightedMeshRenderablePtr init_wall ( ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_caddy ( ShaderProgramPtr phong_shader) {
     // Add the caddy
-    const std::string caddy_path = "../../good/obj/chariot.obj";
+    const std::string caddy_path = "../../assets/obj/chariot.obj";
     std::vector<std::vector<glm::vec3>> all_positions_caddy;
     std::vector<std::vector<glm::vec3>> all_normals_caddy;
     std::vector<std::vector<glm::vec2>> all_texcoords_caddy;
@@ -208,7 +208,7 @@ LightedMeshRenderablePtr init_caddy ( ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_gare( ShaderProgramPtr phong_shader) {
     // Add the suitcase
-    const std::string suitcase_path = "../../good/obj/gare.obj";
+    const std::string suitcase_path = "../../assets/obj/gare.obj";
     std::vector<std::vector<glm::vec3>> all_positions_suitcase;
     std::vector<std::vector<glm::vec3>> all_normals_suitcase;
     std::vector<std::vector<glm::vec2>> all_texcoords_suitcase;

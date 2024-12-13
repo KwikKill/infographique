@@ -33,11 +33,11 @@
 #include <texturing/TexturedLightedMeshRenderable.hpp>
 #include <random>
 
-const std::string texture_path = "../../good/mtl/";
+const std::string texture_path = "../../assets/mtl/";
 
 LightedMeshRenderablePtr init_tree1(ShaderProgramPtr phong_shader) {
     // Add the tree
-    const std::string tree_path = "../../good/obj/tree.obj";
+    const std::string tree_path = "../../assets/obj/tree.obj";
     std::vector<std::vector<glm::vec3>> all_positions_tree;
     std::vector<std::vector<glm::vec3>> all_normals_tree;
     std::vector<std::vector<glm::vec2>> all_texcoords_tree;
@@ -70,7 +70,7 @@ LightedMeshRenderablePtr init_tree1(ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_tree2(ShaderProgramPtr phong_shader) {
     // Add the tree
-    const std::string tree_path = "../../good/obj/tree2.obj";
+    const std::string tree_path = "../../assets/obj/tree2.obj";
     std::vector<std::vector<glm::vec3>> all_positions_tree;
     std::vector<std::vector<glm::vec3>> all_normals_tree;
     std::vector<std::vector<glm::vec2>> all_texcoords_tree;
@@ -156,7 +156,7 @@ void init_explosion(Viewer& viewer, ShaderProgramPtr phong_shader) {
     HierarchicalRenderable::addChild(systemRenderable, particleListRenderable);
 
     // Add an explosion object
-    const std::string explosion_path = "../../good/obj/explosion.obj";
+    const std::string explosion_path = "../../assets/obj/explosion.obj";
     std::vector<std::vector<glm::vec3>> all_positions_explosion;
     std::vector<std::vector<glm::vec3>> all_normals_explosion;
     std::vector<std::vector<glm::vec2>> all_texcoords_explosion;
@@ -203,7 +203,7 @@ void init_explosion(Viewer& viewer, ShaderProgramPtr phong_shader) {
 
 TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string image_path) {
     // Add the pinguin
-    const std::string pinguin_path = "../../good/obj/pinguin.obj";
+    const std::string pinguin_path = "../../assets/obj/pinguin.obj";
 
     TexturedMeshRenderablePtr root_pinguin = std::make_shared<TexturedMeshRenderable>(
         texShader, pinguin_path, image_path
@@ -214,7 +214,7 @@ TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string i
 
 LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgramPtr texShader, bool rotation) {
     // Add the car
-    const std::string obj_path = "../../good/obj/ossature.obj";
+    const std::string obj_path = "../../assets/obj/ossature.obj";
     std::vector<std::vector<glm::vec3>> all_positions;
     std::vector<std::vector<glm::vec3>> all_normals;
     std::vector<std::vector<glm::vec2>> all_texcoords;
@@ -236,7 +236,7 @@ LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgram
     }
     
     // Add car roues avant
-    const std::string roues_path = "../../good/obj/roues_voiture.obj";
+    const std::string roues_path = "../../assets/obj/roues_voiture.obj";
     std::vector<std::vector<glm::vec3>> all_positions_roues_avant;
     std::vector<std::vector<glm::vec3>> all_normals_roues_avant;
     std::vector<std::vector<glm::vec2>> all_texcoords_roues_avant;
@@ -320,7 +320,7 @@ LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgram
     }
 
     // Add a pinguin in the car
-    TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../good/texture/pinguin_1.png");
+    TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../assets/texture/pinguin_1.png");
     pinguin->addGlobalTransformKeyframe(getTranslationMatrix(0, 2, 0.1), 0);
     pinguin->addGlobalTransformKeyframe(getTranslationMatrix(0, 1, 2), 1.7);
     pinguin->addGlobalTransformKeyframe(getTranslationMatrix(0, 1, 2), 5);
@@ -333,7 +333,7 @@ LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgram
 
 LightedMeshRenderablePtr init_rails(ShaderProgramPtr phong_shader) {
     // Add the rails
-    const std::string rails_path = "../../good/obj/rails.obj";
+    const std::string rails_path = "../../assets/obj/rails.obj";
     std::vector<std::vector<glm::vec3>> all_positions_rails;
     std::vector<std::vector<glm::vec3>> all_normals_rails;
     std::vector<std::vector<glm::vec2>> all_texcoords_rails;
@@ -389,7 +389,7 @@ LightedMeshRenderablePtr init_traing_wheels(const std::string& path, const std::
 
 LightedMeshRenderablePtr init_wagon( ShaderProgramPtr phong_shader) {
     // Add the car
-    const std::string wagon_path = "../../good/obj/wagon.obj";
+    const std::string wagon_path = "../../assets/obj/wagon.obj";
     std::vector<std::vector<glm::vec3>> all_positions_wagon;
     std::vector<std::vector<glm::vec3>> all_normals_wagon;
     std::vector<std::vector<glm::vec2>> all_texcoords_wagon;
@@ -416,7 +416,7 @@ LightedMeshRenderablePtr init_wagon( ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon, const std::vector<std::pair<glm::mat4, float>>& transformations) {
     // Add the traing
-    const std::string traing_path = "../../good/obj/ossature_train_finale.obj";
+    const std::string traing_path = "../../assets/obj/ossature_train_finale.obj";
     std::vector<std::vector<glm::vec3>> all_positions_traing;
     std::vector<std::vector<glm::vec3>> all_normals_traing;
     std::vector<std::vector<glm::vec2>> all_texcoords_traing;
@@ -438,8 +438,8 @@ LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon
         HierarchicalRenderable::addChild(root_traing, part);
     }
 
-    const std::string roues_traing_path = "../../good/obj/petites_roues_train.obj";
-    const std::string roues_arriere_traing_path = "../../good/obj/grandes_roues_train.obj";
+    const std::string roues_traing_path = "../../assets/obj/petites_roues_train.obj";
+    const std::string roues_arriere_traing_path = "../../assets/obj/grandes_roues_train.obj";
     std::vector<glm::vec3> translations = {
         glm::vec3(-5.3, 2, -0.1),
         glm::vec3(-1, 2, -0.1),
@@ -477,7 +477,7 @@ LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon
 
 LightedMeshRenderablePtr init_bridge(ShaderProgramPtr phong_shader) {
     // Add the bridge
-    const std::string bridge_path = "../../good/obj/pont.obj";
+    const std::string bridge_path = "../../assets/obj/pont.obj";
     std::vector<std::vector<glm::vec3>> all_positions_bridge;
     std::vector<std::vector<glm::vec3>> all_normals_bridge;
     std::vector<std::vector<glm::vec2>> all_texcoords_bridge;
@@ -504,7 +504,7 @@ LightedMeshRenderablePtr init_bridge(ShaderProgramPtr phong_shader) {
 
 TexturedLightedMeshRenderablePtr init_ground(ShaderProgramPtr texShader, MaterialPtr material) {
     // Add the ground
-    const std::string ground_path = "../../good/obj/ground2.obj";
+    const std::string ground_path = "../../assets/obj/ground2.obj";
     const std::string image_path = "./../../sfmlGraphicsPipeline/textures/grass_texture.png";
 
     TexturedLightedMeshRenderablePtr root_ground = std::make_shared<TexturedLightedMeshRenderable>(

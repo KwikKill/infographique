@@ -51,13 +51,6 @@ void initialize_scene( Viewer& viewer )
     // Add pillar to the viewer
     viewer.addRenderable(pillar);
 
-    const std::string traing_path = "../../good/goodgood3.obj";
-    MeshRenderablePtr traing = std::make_shared<MeshRenderable>(flatShader, traing_path);
-    traing->setModelMatrix(getTranslationMatrix(5,0,0));
-    // Reduce scale (/10)
-    traing->setModelMatrix(glm::scale(traing->getModelMatrix(), glm::vec3(0.1,0.1,0.1)));
-    // Add traing to the viewer
-    viewer.addRenderable(traing);
 }
 
 int main() 

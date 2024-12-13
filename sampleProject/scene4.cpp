@@ -33,11 +33,11 @@
 #include <FrameRenderable.hpp>
 #include <random>
 
-const std::string texture_path = "../../good/mtl/";
+const std::string texture_path = "../../assets/mtl/";
 
 LightedMeshRenderablePtr init_tree1(ShaderProgramPtr phong_shader) {
     // Add the tree
-    const std::string tree_path = "../../good/obj/tree.obj";
+    const std::string tree_path = "../../assets/obj/tree.obj";
     std::vector<std::vector<glm::vec3>> all_positions_tree;
     std::vector<std::vector<glm::vec3>> all_normals_tree;
     std::vector<std::vector<glm::vec2>> all_texcoords_tree;
@@ -70,7 +70,7 @@ LightedMeshRenderablePtr init_tree1(ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_tree2(ShaderProgramPtr phong_shader) {
     // Add the tree
-    const std::string tree_path = "../../good/obj/tree2.obj";
+    const std::string tree_path = "../../assets/obj/tree2.obj";
     std::vector<std::vector<glm::vec3>> all_positions_tree;
     std::vector<std::vector<glm::vec3>> all_normals_tree;
     std::vector<std::vector<glm::vec2>> all_texcoords_tree;
@@ -103,7 +103,7 @@ LightedMeshRenderablePtr init_tree2(ShaderProgramPtr phong_shader) {
 
 TexturedLightedMeshRenderablePtr init_ground(ShaderProgramPtr texShader, MaterialPtr material) {
     // Add the ground
-    const std::string ground_path = "../../good/obj/ground2.obj";
+    const std::string ground_path = "../../assets/obj/ground2.obj";
     const std::string image_path = "./../../sfmlGraphicsPipeline/textures/grass_texture.png";
 
     TexturedLightedMeshRenderablePtr root_ground = std::make_shared<TexturedLightedMeshRenderable>(
@@ -115,7 +115,7 @@ TexturedLightedMeshRenderablePtr init_ground(ShaderProgramPtr texShader, Materia
 
 LightedMeshRenderablePtr init_pinguin_glasses(ShaderProgramPtr phong_shader) {
     // Add the pinguin glasses
-    const std::string pinguin_glasses_path = "../../good/obj/lunettes_eclair.obj";
+    const std::string pinguin_glasses_path = "../../assets/obj/lunettes_eclair.obj";
     std::vector<std::vector<glm::vec3>> all_positions_pinguin_glasses;
     std::vector<std::vector<glm::vec3>> all_normals_pinguin_glasses;
     std::vector<std::vector<glm::vec2>> all_texcoords_pinguin_glasses;
@@ -142,7 +142,7 @@ LightedMeshRenderablePtr init_pinguin_glasses(ShaderProgramPtr phong_shader) {
 
 TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string image_path) {
     // Add the pinguin
-    const std::string pinguin_path = "../../good/obj/pinguin.obj";
+    const std::string pinguin_path = "../../assets/obj/pinguin.obj";
 
     TexturedMeshRenderablePtr root_pinguin = std::make_shared<TexturedMeshRenderable>(
         texShader, pinguin_path, image_path
@@ -153,7 +153,7 @@ TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string i
 
 LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgramPtr texShader, bool rotation) {
     // Add the car
-    const std::string obj_path = "../../good/obj/ossature.obj";
+    const std::string obj_path = "../../assets/obj/ossature.obj";
     std::vector<std::vector<glm::vec3>> all_positions;
     std::vector<std::vector<glm::vec3>> all_normals;
     std::vector<std::vector<glm::vec2>> all_texcoords;
@@ -175,7 +175,7 @@ LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgram
     }
     
     // Add car roues avant
-    const std::string roues_path = "../../good/obj/roues_voiture.obj";
+    const std::string roues_path = "../../assets/obj/roues_voiture.obj";
     std::vector<std::vector<glm::vec3>> all_positions_roues_avant;
     std::vector<std::vector<glm::vec3>> all_normals_roues_avant;
     std::vector<std::vector<glm::vec2>> all_texcoords_roues_avant;
@@ -259,7 +259,7 @@ LightedMeshRenderablePtr init_car ( ShaderProgramPtr phong_shader, ShaderProgram
     }
 
     // Add a pinguin in the car
-    TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../good/texture/pinguin_1.png");
+    TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../assets/texture/pinguin_1.png");
     pinguin->setGlobalTransform(getTranslationMatrix(0, 0.4, 0.1));
     pinguin->setLocalTransform(getScaleMatrix(4, 4, 4));
     HierarchicalRenderable::addChild(root, pinguin);
@@ -296,8 +296,8 @@ LightedMeshRenderablePtr init_wand(ShaderProgramPtr phong_shader, std::string pa
 
 TexturedLightedMeshRenderablePtr init_wand2(ShaderProgramPtr texShader) {
     // Add the wand2
-    const std::string wand2_path = "../../good/obj/wand4withpng.obj";
-    const std::string image_path = "../../good/texture/wand.jpeg";
+    const std::string wand2_path = "../../assets/obj/wand4withpng.obj";
+    const std::string image_path = "../../assets/texture/wand.jpeg";
 
     TexturedLightedMeshRenderablePtr root_wand2 = std::make_shared<TexturedLightedMeshRenderable>(
         texShader, wand2_path, Material::Bronze(), image_path
@@ -308,15 +308,15 @@ TexturedLightedMeshRenderablePtr init_wand2(ShaderProgramPtr texShader) {
 
 TexturedLightedMeshRenderablePtr init_traing_interior(ShaderProgramPtr texShader, ShaderProgramPtr phong_shader, ShaderProgramPtr flat_shader) {
     // Add the traing interior Interior_baseColor
-    const std::string traing_interior_path = "../../good/obj/interieur_wagon.obj";
-    const std::string image_path = "../../good/texture/Interior_baseColor.png";
+    const std::string traing_interior_path = "../../assets/obj/interieur_wagon.obj";
+    const std::string image_path = "../../assets/texture/Interior_baseColor.png";
 
     TexturedLightedMeshRenderablePtr root_traing_interior = std::make_shared<TexturedLightedMeshRenderable>(
         texShader, traing_interior_path, Material::Bronze(), image_path
     );
 
     // Add the glass (LightedMeshRenderable)
-    /*const std::string glass_path = "../../good/obj/vitres_wagon.obj";
+    /*const std::string glass_path = "../../assets/obj/vitres_wagon.obj";
     std::vector<std::vector<glm::vec3>> all_positions_glass;
     std::vector<std::vector<glm::vec3>> all_normals_glass;
     std::vector<std::vector<glm::vec2>> all_texcoords_glass;
@@ -356,13 +356,13 @@ TexturedLightedMeshRenderablePtr init_traing_interior(ShaderProgramPtr texShader
     int i = 0;
 
     for (const auto& pos : penguin_positions) {
-        TexturedMeshRenderablePtr penguin = init_pinguin(texShader, "../../good/texture/pinguin_" + std::to_string(i+1) + ".png");
+        TexturedMeshRenderablePtr penguin = init_pinguin(texShader, "../../assets/texture/pinguin_" + std::to_string(i+1) + ".png");
         glm::mat4 translation = getTranslationMatrix(pos.x, pos.y, pos.z);
         HierarchicalRenderable::addChild(root_traing_interior, penguin);
 
         // Add a wand to the penguin
         if (i == 0) {
-            LightedMeshRenderablePtr wand1 = init_wand(phong_shader, "../../good/obj/wand3.obj");
+            LightedMeshRenderablePtr wand1 = init_wand(phong_shader, "../../assets/obj/wand3.obj");
             wand1->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 0);
             wand1->addGlobalTransformKeyframe(translation * getRotationMatrix(-3.14 / 24, glm::vec3(0, 0, 1)), 1);
             wand1->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 2);
@@ -374,13 +374,13 @@ TexturedLightedMeshRenderablePtr init_traing_interior(ShaderProgramPtr texShader
             wand2->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 2);
             HierarchicalRenderable::addChild(penguin, wand2);
         } else if (i == 2) {
-            LightedMeshRenderablePtr wand3 = init_wand(phong_shader, "../../good/obj/wand2.obj");
+            LightedMeshRenderablePtr wand3 = init_wand(phong_shader, "../../assets/obj/wand2.obj");
             wand3->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 0);
             wand3->addGlobalTransformKeyframe(translation * getRotationMatrix(-3.14 / 24, glm::vec3(0, 0, 1)), 1);
             wand3->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 2);
             HierarchicalRenderable::addChild(penguin, wand3);
         }else if (i == 3) {
-            LightedMeshRenderablePtr wand4 = init_wand(phong_shader, "../../good/obj/wand1.obj");
+            LightedMeshRenderablePtr wand4 = init_wand(phong_shader, "../../assets/obj/wand1.obj");
             wand4->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 0);
             wand4->addGlobalTransformKeyframe(translation * getRotationMatrix(-3.14 / 24, glm::vec3(0, 0, 1)), 1);
             wand4->addGlobalTransformKeyframe(translation * getRotationMatrix(3.14 / 24, glm::vec3(0, 0, 1)), 2);

@@ -32,11 +32,11 @@
 #include <FrameRenderable.hpp>
 #include <lighting/SpotLightRenderable.hpp>
 
-const std::string texture_path = "../../good/mtl/";
+const std::string texture_path = "../../assets/mtl/";
 
 LightedMeshRenderablePtr init_logo(ShaderProgramPtr phong_shader) {
     // Add the logo
-    const std::string logo_path = "../../good/obj/logo.obj";
+    const std::string logo_path = "../../assets/obj/logo.obj";
     std::vector<std::vector<glm::vec3>> all_positions_logo;
     std::vector<std::vector<glm::vec3>> all_normals_logo;
     std::vector<std::vector<glm::vec2>> all_texcoords_logo;

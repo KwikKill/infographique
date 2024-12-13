@@ -31,11 +31,11 @@
 #include <texturing/CubeMapRenderable.hpp>
 #include <FrameRenderable.hpp>
 
-const std::string texture_path = "../../good/mtl/";
+const std::string texture_path = "../../assets/mtl/";
 
 LightedMeshRenderablePtr init_wall ( ShaderProgramPtr phong_shader) {
     // Add the wall
-    const std::string wall_obj_path = "../../good/obj/wall_final.obj";
+    const std::string wall_obj_path = "../../assets/obj/wall_final.obj";
     std::vector<std::vector<glm::vec3>> wall_positions;
     std::vector<std::vector<glm::vec3>> wall_normals;
     std::vector<std::vector<glm::vec2>> wall_texcoords;
@@ -61,7 +61,7 @@ LightedMeshRenderablePtr init_wall ( ShaderProgramPtr phong_shader) {
 
 LightedMeshRenderablePtr init_caddy ( ShaderProgramPtr phong_shader) {
     // Add the caddy
-    const std::string caddy_path = "../../good/obj/chariot.obj";
+    const std::string caddy_path = "../../assets/obj/chariot.obj";
     std::vector<std::vector<glm::vec3>> all_positions_caddy;
     std::vector<std::vector<glm::vec3>> all_normals_caddy;
     std::vector<std::vector<glm::vec2>> all_texcoords_caddy;
@@ -87,36 +87,9 @@ LightedMeshRenderablePtr init_caddy ( ShaderProgramPtr phong_shader) {
 
 }
 
-LightedMeshRenderablePtr init_suitcase( ShaderProgramPtr phong_shader) {
-    // Add the suitcase
-    const std::string suitcase_path = "../../good/obj/suitcase_final.obj";
-    std::vector<std::vector<glm::vec3>> all_positions_suitcase;
-    std::vector<std::vector<glm::vec3>> all_normals_suitcase;
-    std::vector<std::vector<glm::vec2>> all_texcoords_suitcase;
-    std::vector<std::vector<unsigned int>> all_indices_suitcase;
-    std::vector<MaterialPtr> materials_suitcase;
-
-    read_obj_with_materials(suitcase_path, texture_path, all_positions_suitcase, all_normals_suitcase, all_texcoords_suitcase, materials_suitcase);
-
-    int n_object_suitcase = materials_suitcase.size();
-    std::vector<glm::vec4> colors_suitcase;
-
-    LightedMeshRenderablePtr root_suitcase;
-
-    root_suitcase = std::make_shared<LightedMeshRenderable>(
-        phong_shader, all_positions_suitcase[0], all_normals_suitcase[0], colors_suitcase, materials_suitcase[0]);
-    for (int i = 1 ; i < n_object_suitcase ; ++i){
-        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
-        phong_shader, all_positions_suitcase[i], all_normals_suitcase[i], colors_suitcase, materials_suitcase[i]);
-        HierarchicalRenderable::addChild(root_suitcase, part);
-    }
-
-    return root_suitcase;
-}
-
 LightedMeshRenderablePtr init_gare( ShaderProgramPtr phong_shader) {
     // Add the suitcase
-    const std::string suitcase_path = "../../good/obj/gare.obj";
+    const std::string suitcase_path = "../../assets/obj/gare.obj";
     std::vector<std::vector<glm::vec3>> all_positions_suitcase;
     std::vector<std::vector<glm::vec3>> all_normals_suitcase;
     std::vector<std::vector<glm::vec2>> all_texcoords_suitcase;
@@ -183,7 +156,7 @@ void scene1( Viewer& viewer )
     viewer.addRenderable(gare_root);
 
     // Add the 9 3/4 sign
-    const std::string sign_obj_path = "../../good/obj/pancarte9_3_4.obj";
+    const std::string sign_obj_path = "../../assets/obj/pancarte9_3_4.obj";
     std::vector<std::vector<glm::vec3>> sign_positions;
     std::vector<std::vector<glm::vec3>> sign_normals;
     std::vector<std::vector<glm::vec2>> sign_texcoords;
@@ -231,12 +204,6 @@ void scene1( Viewer& viewer )
     camera.addGlobalTransformKeyframe(getTranslationMatrix(10, 12, 16)*getRotationMatrix(-3.14/12, glm::vec3(0, -1, 0)), 0);
     camera.addGlobalTransformKeyframe(getTranslationMatrix(0, 8, 5.5)*getRotationMatrix(-3.14/12, glm::vec3(1, 0, 0)), 3);
     camera.addGlobalTransformKeyframe(getTranslationMatrix(0, 8, -5)*getRotationMatrix(-3.14/12, glm::vec3(1, 0, 0)), 6);
-
-    // Add the suitcase
-    //LightedMeshRenderablePtr root_suitcase = init_suitcase(phong_shader);
-
-    // set the suitcase as a child of the caddie
-    //HierarchicalRenderable::addChild(root_caddie, root_suitcase);
 
     // Lightning
     glm::vec3 dir = glm::normalize(glm::vec3(-1,-1,-1));
