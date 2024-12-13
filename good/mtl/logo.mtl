@@ -3,10 +3,10 @@
 
 newmtl Material.001
 Ns 250.000000
-Ka 0.700787 0.700787 0.700787
-Kd 0.800000 0.800000 0.800000
-Ks 0.500000 0.500000 0.500000
+Ka 0.24725 0.1995 0.0745  # Ambient color for gold
+Kd 0.75164 0.60648 0.22648  # Diffuse color for gold
+Ks 0.628281 0.555802 0.366065  # Specular color for gold
 Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
-illum 3
+illum 2

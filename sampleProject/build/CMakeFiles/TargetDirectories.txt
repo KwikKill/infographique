@@ -4,6 +4,7 @@ C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/demo_l
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/demo_moving_lights.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/demo_nonrigid.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/demo_soft_body.dir
+C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/logo.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/playground.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/practical1.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/practical2.dir
@@ -18,7 +19,6 @@ C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene3
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene4.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene5.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene6.dir
-C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/scene_old.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/test.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/edit_cache.dir
 C:/Users/gabri/Documents/dev/infographique/sampleProject/build/CMakeFiles/rebuild_cache.dir

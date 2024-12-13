@@ -10,8 +10,6 @@ struct Material
     vec3 diffuse;
     vec3 specular;
     float shininess;
-    float optical_density;
-    float dissolve;
 };
 
 struct DirectionalLight
@@ -175,8 +173,6 @@ void main()
 
     for(int i=0; i<clampedNumberOfSpotLight; ++i)
         tmpColor += computeSpotLight(spotLight[i], surfel_to_camera);
-
-    //tmpColor *= material.optical_density;
 
     outColor = vec4(tmpColor, 1.0);
 }

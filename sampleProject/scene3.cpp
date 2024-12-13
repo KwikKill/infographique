@@ -35,6 +35,72 @@
 
 const std::string texture_path = "../../good/mtl/";
 
+LightedMeshRenderablePtr init_tree1(ShaderProgramPtr phong_shader) {
+    // Add the tree
+    const std::string tree_path = "../../good/obj/tree.obj";
+    std::vector<std::vector<glm::vec3>> all_positions_tree;
+    std::vector<std::vector<glm::vec3>> all_normals_tree;
+    std::vector<std::vector<glm::vec2>> all_texcoords_tree;
+    std::vector<std::vector<unsigned int>> all_indices_tree;
+    std::vector<MaterialPtr> materials_tree;
+
+    read_obj_with_materials(tree_path, texture_path, all_positions_tree, all_normals_tree, all_texcoords_tree, materials_tree);
+
+    int n_object_tree = materials_tree.size();
+    std::vector<glm::vec4> colors_tree;
+
+    LightedMeshRenderablePtr root_tree;
+
+    root_tree = std::make_shared<LightedMeshRenderable>(
+        phong_shader, all_positions_tree[0], all_normals_tree[0], colors_tree, materials_tree[0]);
+    root_tree->setLocalTransform(
+        getScaleMatrix(0.1, 0.1, 0.1)
+    );
+    for (int i = 1; i < n_object_tree; ++i) {
+        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
+            phong_shader, all_positions_tree[i], all_normals_tree[i], colors_tree, materials_tree[i]);
+        HierarchicalRenderable::addChild(root_tree, part);
+        part->setLocalTransform(
+            getScaleMatrix(0.1, 0.1, 0.1)
+        );
+    }
+
+    return root_tree;
+}
+
+LightedMeshRenderablePtr init_tree2(ShaderProgramPtr phong_shader) {
+    // Add the tree
+    const std::string tree_path = "../../good/obj/tree2.obj";
+    std::vector<std::vector<glm::vec3>> all_positions_tree;
+    std::vector<std::vector<glm::vec3>> all_normals_tree;
+    std::vector<std::vector<glm::vec2>> all_texcoords_tree;
+    std::vector<std::vector<unsigned int>> all_indices_tree;
+    std::vector<MaterialPtr> materials_tree;
+
+    read_obj_with_materials(tree_path, texture_path, all_positions_tree, all_normals_tree, all_texcoords_tree, materials_tree);
+
+    int n_object_tree = materials_tree.size();
+    std::vector<glm::vec4> colors_tree;
+
+    LightedMeshRenderablePtr root_tree;
+
+    root_tree = std::make_shared<LightedMeshRenderable>(
+        phong_shader, all_positions_tree[0], all_normals_tree[0], colors_tree, materials_tree[0]);
+    root_tree->setLocalTransform(
+        getScaleMatrix(0.2, 0.2, 0.2)
+    );
+    for (int i = 1; i < n_object_tree; ++i) {
+        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
+            phong_shader, all_positions_tree[i], all_normals_tree[i], colors_tree, materials_tree[i]);
+        HierarchicalRenderable::addChild(root_tree, part);
+        part->setLocalTransform(
+            getScaleMatrix(0.2, 0.2, 0.2)
+        );
+    }
+
+    return root_tree;
+}
+
 TexturedMeshRenderablePtr init_pinguin(ShaderProgramPtr texShader, std::string image_path) {
     // Add the pinguin
     const std::string pinguin_path = "../../good/obj/pinguin.obj";
@@ -190,33 +256,6 @@ LightedMeshRenderablePtr init_traing(ShaderProgramPtr phong_shader, int nb_wagon
     return root_traing;
 }
 
-LightedMeshRenderablePtr init_bridge(ShaderProgramPtr phong_shader) {
-    // Add the bridge
-    const std::string bridge_path = "../../good/obj/pont.obj";
-    std::vector<std::vector<glm::vec3>> all_positions_bridge;
-    std::vector<std::vector<glm::vec3>> all_normals_bridge;
-    std::vector<std::vector<glm::vec2>> all_texcoords_bridge;
-    std::vector<std::vector<unsigned int>> all_indices_bridge;
-    std::vector<MaterialPtr> materials_bridge;
-
-    read_obj_with_materials(bridge_path, texture_path, all_positions_bridge, all_normals_bridge, all_texcoords_bridge, materials_bridge);
-
-    int n_object_bridge = materials_bridge.size();
-    std::vector<glm::vec4> colors_bridge;
-
-    LightedMeshRenderablePtr root_bridge;
-
-    root_bridge = std::make_shared<LightedMeshRenderable>(
-        phong_shader, all_positions_bridge[0], all_normals_bridge[0], colors_bridge, materials_bridge[0]);
-    for (int i = 1; i < n_object_bridge; ++i) {
-        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
-            phong_shader, all_positions_bridge[i], all_normals_bridge[i], colors_bridge, materials_bridge[i]);
-        HierarchicalRenderable::addChild(root_bridge, part);
-    }
-
-    return root_bridge;
-}
-
 TexturedLightedMeshRenderablePtr init_ground(ShaderProgramPtr texShader, MaterialPtr material) {
     // Add the ground
     const std::string ground_path = "../../good/obj/ground2.obj";
@@ -276,11 +315,12 @@ void scene3( Viewer& viewer )
     int ground_pieces_z = 10; // Number of ground pieces along the Z-axis
     float ground_size = 10.0f; // Size of each ground piece
 
-    // Random number generator for rotation angles
+    // Random number generator for rotation angles and elevation variations
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<> dis(0.0, 360.0);
     std::uniform_real_distribution<> dis_elevation(-1.0, 1.0); // Adjust the range for desired elevation variation
+    std::uniform_real_distribution<> dis_tree(0.0, 1.0); // Random distribution for tree spawning
 
     for (int i = 0; i < ground_pieces_x; ++i) {
         for (int j = 0; j < ground_pieces_z; ++j) {
@@ -311,6 +351,20 @@ void scene3( Viewer& viewer )
             // Apply translation and rotation
             ground->setLocalTransform(translation * rotation);
             viewer.addRenderable(ground);
+
+            // 20% chance to spawn a tree in the outside areas
+            if ((j <= ground_pieces_z / 3) && dis_tree(gen) < 0.3) {
+                LightedMeshRenderablePtr tree;
+                if (dis_tree(gen) < 0.5) {
+                    tree = init_tree1(phong_shader);
+                } else {
+                    tree = init_tree2(phong_shader);
+                }
+                tree->setGlobalTransform(
+                    getTranslationMatrix((i - ground_pieces_x / 2) * ground_size, elevation, (j - ground_pieces_z / 2) * ground_size)
+                );
+                HierarchicalRenderable::addChild(ground, tree);
+            }
         }
     }
 
@@ -320,7 +374,7 @@ void scene3( Viewer& viewer )
     viewer.addRenderable(rails);
 
     // Add a pinguin
-    TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../good/texture/pinguin_1.png");
+    TexturedMeshRenderablePtr pinguin = init_pinguin(texShader, "../../good/texture/pinguin_4.png");
     pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 2.3, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 0);
     pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 2.3, -5)*getRotationMatrix(3.14/4, glm::vec3(0, 1, 0)), 5.2);
     pinguin->addGlobalTransformKeyframe(getTranslationMatrix(5, 1.3, -5)*getRotationMatrix(3.14/2, glm::vec3(0, -0.5, 1)), 5.4);

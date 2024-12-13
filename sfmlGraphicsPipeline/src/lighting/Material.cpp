@@ -10,18 +10,14 @@ Material::Material()
     m_diffuse = glm::vec3(0.0,0.0,0.0);
     m_specular = glm::vec3(0.0,0.0,0.0);
     m_shininess = 0.0;
-    m_optical_density = 1.0;
-    m_dissolve = 1.0;
 }
 
-Material::Material(const glm::vec3& ambient, const glm::vec3& diffuse, const glm::vec3& specular, const float &shininess, const float &optical_density, const float &dissolve)
+Material::Material(const glm::vec3& ambient, const glm::vec3& diffuse, const glm::vec3& specular, const float &shininess)
 {
     m_ambient = ambient;
     m_diffuse = diffuse;
     m_specular = specular;
     m_shininess = shininess;
-    m_optical_density = optical_density;
-    m_dissolve = dissolve;
 }
 
 Material::Material(const Material& material)
@@ -70,26 +66,6 @@ void Material::setShininess(float shininess)
 const float &Material::shininess() const
 {
     return m_shininess;
-}
-
-const float &Material::getOpticalDensity() const
-{
-    return m_optical_density;
-}
-
-void Material::setOpticalDensity(float optical_density)
-{
-    m_optical_density = optical_density;
-}
-
-const float &Material::getDissolve() const
-{
-    return m_dissolve;
-}
-
-void Material::setDissolve(float dissolve)
-{
-    m_dissolve = dissolve;
 }
 
 bool Material::sendToGPU(const ShaderProgramPtr& program, const MaterialPtr &material)
@@ -144,26 +120,6 @@ bool Material::sendToGPU(const ShaderProgramPtr& program, const MaterialPtr &mat
         success = false;
     }
 
-    location = program->getUniformLocation("material.optical_density");
-    if(location!=ShaderProgram::null_location)
-    {
-        glcheck(glUniform1f(location, material->getOpticalDensity()));
-    }
-    else
-    {
-        success = false;
-    }
-
-    location = program->getUniformLocation("material.dissolve");
-    if(location!=ShaderProgram::null_location)
-    {
-        glcheck(glUniform1f(location, material->getDissolve()));
-    }
-    else
-    {
-        success = false;
-    }
-
     return success;
 }
 
@@ -207,16 +163,6 @@ MaterialPtr Material::Grass()
     return std::make_shared<Material>(ambient, diffuse, specular, shininess);
 }
 
-MaterialPtr Material::Glass()
-{
-    float openGLFactor=128.0;
-    glm::vec3 ambient(0.0, 0.0, 0.0);
-    glm::vec3 diffuse(0.588235, 0.670588, 0.729412);
-    glm::vec3 specular(0.9, 0.9, 0.9);
-    float shininess = openGLFactor*0.6;
-    return std::make_shared<Material>(ambient, diffuse, specular, shininess, 1.5, 0.0);
-}
-
 MaterialPtr Material::Ground()
 {
     float openGLFactor = 128.0;
@@ -224,5 +170,15 @@ MaterialPtr Material::Ground()
     glm::vec3 diffuse(0.6, 0.6, 0.5); 
     glm::vec3 specular(0.2, 0.2, 0.2); 
     float shininess = openGLFactor * 0.1; 
+    return std::make_shared<Material>(ambient, diffuse, specular, shininess);
+}
+
+MaterialPtr Material::Gold()
+{
+    float openGLFactor=128.0;
+    glm::vec3 ambient(0.24725, 	0.1995, 0.0745);
+    glm::vec3 diffuse(0.75164, 0.60648, 0.22648);
+    glm::vec3 specular(0.628281, 0.555802, 0.366065);
+    float shininess = openGLFactor*0.4;
     return std::make_shared<Material>(ambient, diffuse, specular, shininess);
 }

@@ -30,6 +30,8 @@
 #include <texturing/TexturedTriangleRenderable.hpp>
 #include <texturing/CubeMapRenderable.hpp>
 #include <FrameRenderable.hpp>
+#include <lighting/SpotLightRenderable.hpp>
+#include <lighting/PointLightRenderable.hpp>
 
 const std::string texture_path = "../../good/mtl/";
 
@@ -248,13 +250,7 @@ void scene2 ( Viewer& viewer) {
         "../../sfmlGraphicsPipeline/shaders/cubeMapFragment.glsl");
     viewer.addShaderProgram( texShader );
     viewer.addShaderProgram( cubeMapShader );
-
-    
-    //std::string cubemap_dir = "../../sfmlGraphicsPipeline/textures/skybox";
-    //auto cubemap = std::make_shared<CubeMapRenderable>(cubeMapShader, cubemap_dir);
-    //viewer.addRenderable(cubemap);
-
-    // Add the shader program to the viewer
+    viewer.addShaderProgram( flat_shader );
     viewer.addShaderProgram( phong_shader );
 
     // Add the gare
@@ -326,6 +322,21 @@ void scene2 ( Viewer& viewer) {
     viewer.addDirectionalLight(light1);
     viewer.addDirectionalLight(light2);
     viewer.addDirectionalLight(light3);
+
+    // Add lights where the lamps are
+    /*glm::vec3 p_position = glm::vec3(-28, 9.5, 21.5);
+    glm::vec3 p_ambient = glm::vec3(0.0,0.0,0.0);
+    glm::vec3 p_diffuse = glm::vec3(1.0,0.0,0.0);
+    glm::vec3 p_specular = glm::vec3(1.0,0.0,0.0);
+    float p_constant=1.0;
+    float p_linear=5e-1;
+    float p_quadratic=0;
+    PointLightPtr pointLight1 = std::make_shared<PointLight>(p_position, p_ambient, p_diffuse, p_specular, p_constant, p_linear, p_quadratic);
+    PointLightRenderablePtr pointLightRenderable1 = std::make_shared<PointLightRenderable>(flat_shader, pointLight1);
+    glm::mat4 localTransformation = glm::scale(glm::mat4(1.0), glm::vec3(0.5,0.5,0.5));
+    pointLightRenderable1->setLocalTransform(localTransformation);
+    viewer.addPointLight(pointLight1);
+    viewer.addRenderable(pointLightRenderable1);*/
 
     FrameRenderablePtr frame = std::make_shared<FrameRenderable>(flat_shader);
     viewer.addRenderable(frame);

@@ -69,6 +69,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/demo_moving_lights.dir/DependInfo.cmake"
   "CMakeFiles/demo_nonrigid.dir/DependInfo.cmake"
   "CMakeFiles/demo_soft_body.dir/DependInfo.cmake"
+  "CMakeFiles/logo.dir/DependInfo.cmake"
   "CMakeFiles/playground.dir/DependInfo.cmake"
   "CMakeFiles/practical1.dir/DependInfo.cmake"
   "CMakeFiles/practical2.dir/DependInfo.cmake"
@@ -83,6 +84,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/scene4.dir/DependInfo.cmake"
   "CMakeFiles/scene5.dir/DependInfo.cmake"
   "CMakeFiles/scene6.dir/DependInfo.cmake"
-  "CMakeFiles/scene_old.dir/DependInfo.cmake"
   "CMakeFiles/test.dir/DependInfo.cmake"
   )

@@ -45,10 +45,8 @@ public:
      * @param diffuse The diffuse vector of the material.
      * @param specular The specular vector of the material.
      * @param shininess The shininess coefficient of the material.
-     * @param optical_density The optical density of the material.
-     * @param dissolve The dissolve factor of the material.
      */
-    Material(const glm::vec3& ambient, const glm::vec3& diffuse, const glm::vec3& specular, const float& shininess, const float& optical_density = 1.0, const float& dissolve = 1.0);
+    Material(const glm::vec3& ambient, const glm::vec3& diffuse, const glm::vec3& specular, const float& shininess);
 
     /**
      * @brief Access to the ambient vector of the material.
@@ -111,36 +109,6 @@ public:
     void setShininess(float shininess);
 
     /**
-     * @brief Access to the optical density of the material.
-     *
-     * @return A const reference to optical_density.
-     */
-    const float& getOpticalDensity() const;
-
-    /**
-     * @brief Set the optical density of the material.
-     *
-     * Set the value of optical_density.
-     * @param optical_density The new optical density of the material.
-     */
-    void setOpticalDensity(float optical_density);
-
-    /**
-     * @brief Access to the dissolve factor of the material.
-     *
-     * @return A const reference to dissolve.
-     */
-    const float& getDissolve() const;
-
-    /**
-     * @brief Set the dissolve factor of the material.
-     *
-     * Set the value of dissolve.
-     * @param dissolve The new dissolve factor of the material.
-     */
-    void setDissolve(float dissolve);
-
-    /**
      * @brief Get location for the attributes of the material and send the data to the GPU as uniforms.
      *
      * @param program A pointer to the shader program where to get the locations.
@@ -174,24 +142,22 @@ public:
     static MaterialPtr Grass();
 
     /**
-     * @brief Construct a glass material
-     * @return A glass material.
-     */
-    static MaterialPtr Glass();
-
-    /**
      * @brief Construct a ground material
      * @return A ground material.
      */
     static MaterialPtr Ground();
+
+    /**
+     * @brief Construct a gold material
+     * @return A Gold material.
+     */
+    static MaterialPtr Gold();
 
 private:
     glm::vec3 m_ambient; /*!< The ambient material vector defines what color this object reflects under ambient lighting. */
     glm::vec3 m_diffuse; /*!< The diffuse material vector defines the color of the object under diffuse lighting. */
     glm::vec3 m_specular; /*!< The specular material vector sets the color impact a specular light has on the object. */
     float m_shininess; /*!< The shininess impacts the scattering/radius of the specular highlight. */
-    float m_optical_density; /*!< The optical density of the material. */
-    float m_dissolve;  /*!< The dissolve factor of the material. */
 };
 
 typedef std::shared_ptr<Material> MaterialPtr; /*!< Smart pointer to a material */

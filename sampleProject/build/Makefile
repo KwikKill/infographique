@@ -194,6 +194,19 @@ demo_soft_body/fast:
 .PHONY : demo_soft_body/fast
 
 #=============================================================================
+# Target rules for targets named logo
+
+# Build rule for target.
+logo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 logo
+.PHONY : logo
+
+# fast build rule for target.
+logo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logo.dir\build.make CMakeFiles/logo.dir/build
+.PHONY : logo/fast
+
+#=============================================================================
 # Target rules for targets named playground
 
 # Build rule for target.
@@ -376,19 +389,6 @@ scene6/fast:
 .PHONY : scene6/fast
 
 #=============================================================================
-# Target rules for targets named scene_old
-
-# Build rule for target.
-scene_old: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 scene_old
-.PHONY : scene_old
-
-# fast build rule for target.
-scene_old/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/build
-.PHONY : scene_old/fast
-
-#=============================================================================
 # Target rules for targets named test
 
 # Build rule for target.
@@ -544,6 +544,30 @@ demo_soft_body.s: demo_soft_body.cpp.s
 demo_soft_body.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\demo_soft_body.dir\build.make CMakeFiles/demo_soft_body.dir/demo_soft_body.cpp.s
 .PHONY : demo_soft_body.cpp.s
+
+logo.obj: logo.cpp.obj
+.PHONY : logo.obj
+
+# target to build an object file
+logo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logo.dir\build.make CMakeFiles/logo.dir/logo.cpp.obj
+.PHONY : logo.cpp.obj
+
+logo.i: logo.cpp.i
+.PHONY : logo.i
+
+# target to preprocess a source file
+logo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logo.dir\build.make CMakeFiles/logo.dir/logo.cpp.i
+.PHONY : logo.cpp.i
+
+logo.s: logo.cpp.s
+.PHONY : logo.s
+
+# target to generate assembly for a file
+logo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\logo.dir\build.make CMakeFiles/logo.dir/logo.cpp.s
+.PHONY : logo.cpp.s
 
 playground.obj: playground.cpp.obj
 .PHONY : playground.obj
@@ -881,30 +905,6 @@ scene6.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene6.dir\build.make CMakeFiles/scene6.dir/scene6.cpp.s
 .PHONY : scene6.cpp.s
 
-scene_old.obj: scene_old.cpp.obj
-.PHONY : scene_old.obj
-
-# target to build an object file
-scene_old.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/scene_old.cpp.obj
-.PHONY : scene_old.cpp.obj
-
-scene_old.i: scene_old.cpp.i
-.PHONY : scene_old.i
-
-# target to preprocess a source file
-scene_old.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/scene_old.cpp.i
-.PHONY : scene_old.cpp.i
-
-scene_old.s: scene_old.cpp.s
-.PHONY : scene_old.s
-
-# target to generate assembly for a file
-scene_old.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\scene_old.dir\build.make CMakeFiles/scene_old.dir/scene_old.cpp.s
-.PHONY : scene_old.cpp.s
-
 test.obj: test.cpp.obj
 .PHONY : test.obj
 
@@ -943,6 +943,7 @@ help:
 	@echo ... demo_moving_lights
 	@echo ... demo_nonrigid
 	@echo ... demo_soft_body
+	@echo ... logo
 	@echo ... playground
 	@echo ... practical1
 	@echo ... practical2
@@ -957,7 +958,6 @@ help:
 	@echo ... scene4
 	@echo ... scene5
 	@echo ... scene6
-	@echo ... scene_old
 	@echo ... test
 	@echo ... demo_cubemap_blurring.obj
 	@echo ... demo_cubemap_blurring.i
@@ -977,6 +977,9 @@ help:
 	@echo ... demo_soft_body.obj
 	@echo ... demo_soft_body.i
 	@echo ... demo_soft_body.s
+	@echo ... logo.obj
+	@echo ... logo.i
+	@echo ... logo.s
 	@echo ... playground.obj
 	@echo ... playground.i
 	@echo ... playground.s
@@ -1019,9 +1022,6 @@ help:
 	@echo ... scene6.obj
 	@echo ... scene6.i
 	@echo ... scene6.s
-	@echo ... scene_old.obj
-	@echo ... scene_old.i
-	@echo ... scene_old.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

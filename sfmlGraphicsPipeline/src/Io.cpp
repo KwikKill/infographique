@@ -232,9 +232,7 @@ bool read_obj_with_materials_indexed(
         glm::vec3 diffuse(tobj_mat.diffuse[0], tobj_mat.diffuse[1], tobj_mat.diffuse[2]); // Kd
         glm::vec3 specular(tobj_mat.specular[0], tobj_mat.specular[1], tobj_mat.specular[2]); // Ks
         float shininess = tobj_mat.shininess; // Ns
-        float optical_density = tobj_mat.ior; // Ni
-        float dissolve = tobj_mat.dissolve; // d
-        MaterialPtr mat = std::make_shared<Material>(ambient, diffuse, specular, shininess, optical_density, dissolve);
+        MaterialPtr mat = std::make_shared<Material>(ambient, diffuse, specular, shininess);
         materials.push_back(mat);
     }
 

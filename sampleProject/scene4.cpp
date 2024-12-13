@@ -31,10 +31,87 @@
 #include <texturing/CubeMapRenderable.hpp>
 #include <texturing/TexturedLightedMeshRenderable.hpp>
 #include <FrameRenderable.hpp>
+#include <random>
 
 const std::string texture_path = "../../good/mtl/";
 
+LightedMeshRenderablePtr init_tree1(ShaderProgramPtr phong_shader) {
+    // Add the tree
+    const std::string tree_path = "../../good/obj/tree.obj";
+    std::vector<std::vector<glm::vec3>> all_positions_tree;
+    std::vector<std::vector<glm::vec3>> all_normals_tree;
+    std::vector<std::vector<glm::vec2>> all_texcoords_tree;
+    std::vector<std::vector<unsigned int>> all_indices_tree;
+    std::vector<MaterialPtr> materials_tree;
 
+    read_obj_with_materials(tree_path, texture_path, all_positions_tree, all_normals_tree, all_texcoords_tree, materials_tree);
+
+    int n_object_tree = materials_tree.size();
+    std::vector<glm::vec4> colors_tree;
+
+    LightedMeshRenderablePtr root_tree;
+
+    root_tree = std::make_shared<LightedMeshRenderable>(
+        phong_shader, all_positions_tree[0], all_normals_tree[0], colors_tree, materials_tree[0]);
+    root_tree->setLocalTransform(
+        getScaleMatrix(0.1, 0.1, 0.1)
+    );
+    for (int i = 1; i < n_object_tree; ++i) {
+        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
+            phong_shader, all_positions_tree[i], all_normals_tree[i], colors_tree, materials_tree[i]);
+        HierarchicalRenderable::addChild(root_tree, part);
+        part->setLocalTransform(
+            getScaleMatrix(0.1, 0.1, 0.1)
+        );
+    }
+
+    return root_tree;
+}
+
+LightedMeshRenderablePtr init_tree2(ShaderProgramPtr phong_shader) {
+    // Add the tree
+    const std::string tree_path = "../../good/obj/tree2.obj";
+    std::vector<std::vector<glm::vec3>> all_positions_tree;
+    std::vector<std::vector<glm::vec3>> all_normals_tree;
+    std::vector<std::vector<glm::vec2>> all_texcoords_tree;
+    std::vector<std::vector<unsigned int>> all_indices_tree;
+    std::vector<MaterialPtr> materials_tree;
+
+    read_obj_with_materials(tree_path, texture_path, all_positions_tree, all_normals_tree, all_texcoords_tree, materials_tree);
+
+    int n_object_tree = materials_tree.size();
+    std::vector<glm::vec4> colors_tree;
+
+    LightedMeshRenderablePtr root_tree;
+
+    root_tree = std::make_shared<LightedMeshRenderable>(
+        phong_shader, all_positions_tree[0], all_normals_tree[0], colors_tree, materials_tree[0]);
+    root_tree->setLocalTransform(
+        getScaleMatrix(0.2, 0.2, 0.2)
+    );
+    for (int i = 1; i < n_object_tree; ++i) {
+        LightedMeshRenderablePtr part = std::make_shared<LightedMeshRenderable>(
+            phong_shader, all_positions_tree[i], all_normals_tree[i], colors_tree, materials_tree[i]);
+        HierarchicalRenderable::addChild(root_tree, part);
+        part->setLocalTransform(
+            getScaleMatrix(0.2, 0.2, 0.2)
+        );
+    }
+
+    return root_tree;
+}
+
+TexturedLightedMeshRenderablePtr init_ground(ShaderProgramPtr texShader, MaterialPtr material) {
+    // Add the ground
+    const std::string ground_path = "../../good/obj/ground2.obj";
+    const std::string image_path = "./../../sfmlGraphicsPipeline/textures/grass_texture.png";
+
+    TexturedLightedMeshRenderablePtr root_ground = std::make_shared<TexturedLightedMeshRenderable>(
+        texShader, ground_path, material, image_path
+    );
+
+    return root_ground;
+}
 
 LightedMeshRenderablePtr init_pinguin_glasses(ShaderProgramPtr phong_shader) {
     // Add the pinguin glasses
@@ -359,16 +436,136 @@ void scene3( Viewer& viewer )
 
     // Add the car
     LightedMeshRenderablePtr car = init_car(phong_shader, texShader, true);
-    car->addGlobalTransformKeyframe(getTranslationMatrix(-5, 2, -12)*getScaleMatrix(0.1, 0.1, 0.1)*getRotationMatrix(3.14/2, glm::vec3(0, 1, 0)), 0);
-    car->addGlobalTransformKeyframe(getTranslationMatrix(-5, 2, 1)*getScaleMatrix(0.1, 0.1, 0.1)*getRotationMatrix(3.14/2, glm::vec3(0, 1, 0)), 10);
+
+    float startX = -5.0f;
+    float endX = -5.0f;
+    float startY = 2.0f;
+    float z = -12.0f;
+    float scale = 0.1f;
+    int totalFrames = 10;
+    float stepZ = (1.0f - z) / totalFrames;
+    float zigzagAmplitude = 0.5f; // Adjust the amplitude for the zigzag effect
+
+    // frame 0
+    glm::mat4 translation = getTranslationMatrix(startX, startY, z);
+    glm::mat4 scaleMatrix = getScaleMatrix(scale, scale, scale);
+    glm::mat4 rotation = getRotationMatrix(3.14 / 2, glm::vec3(0, 1, 0));
+    car->addGlobalTransformKeyframe(translation * scaleMatrix * rotation, 0);
+
+    // Random number generator for Y-axis variation
+    std::random_device rd2;
+    std::mt19937 gen2(rd2());
+    std::uniform_real_distribution<> dis2(-0.1, 0.1); // Adjust the range for desired randomness
+
+    for (int i = 0; i <= totalFrames; ++i) {
+        float currentZ = z + i * stepZ;
+        float randomVariation = dis2(gen2); // Generate random variation
+        float currentY = startY + ((i % 2 == 0) ? zigzagAmplitude : -zigzagAmplitude) + randomVariation;
+        glm::mat4 translation = getTranslationMatrix(startX, currentY, currentZ);
+        glm::mat4 scaleMatrix = getScaleMatrix(scale, scale, scale);
+        glm::mat4 rotation = getRotationMatrix(3.14 / 2, glm::vec3(0, 1, 0));
+
+        car->addGlobalTransformKeyframe(translation * scaleMatrix * rotation, i + 3);
+    }
+
     viewer.addRenderable(car);
 
     // Move the camera
     Camera& camera = viewer.getCamera();
 
     camera.addGlobalTransformKeyframe(getTranslationMatrix(0.2, 2.6, -2.7)*getRotationMatrix(3.14/16, glm::vec3(0, 1, 0)),0);
-    camera.addGlobalTransformKeyframe(getTranslationMatrix(0.2, 2.6, -2.7)*getRotationMatrix(3.14/2, glm::vec3(0, 1, 0)),10);
+    camera.addGlobalTransformKeyframe(getTranslationMatrix(0.2, 2.6, -2.7)*getRotationMatrix(3.14/16, glm::vec3(0, 1, 0)),3);
+    camera.addGlobalTransformKeyframe(getTranslationMatrix(0.2, 2.6, -2.7)*getRotationMatrix(3.14/2, glm::vec3(0, 1, 0)),13);
 
+    // Add the ground
+    int ground_pieces_x = 10; // Number of ground pieces along the X-axis
+    int ground_pieces_z = 10; // Number of ground pieces along the Z-axis
+    float ground_size = 10.0f; // Size of each ground piece
+
+    // Random number generator for rotation angles and elevation variations
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<> dis(0.0, 360.0);
+    std::uniform_real_distribution<> dis_elevation(-1.0, 1.0); // Adjust the range for desired elevation variation
+    std::uniform_real_distribution<> dis_tree(0.0, 1.0); // Random distribution for tree spawning
+
+    for (int i = 0; i < ground_pieces_x; ++i) {
+        for (int j = 0; j < ground_pieces_z; ++j) {
+            // for the 2 rows in the middle
+            MaterialPtr material;
+            float elevation = 0.0f;
+            if (j < ground_pieces_z / 3) {
+                elevation = (ground_pieces_z / 3 - j) * 2.0f;
+                elevation += dis_elevation(gen);
+
+                material = Material::Grass();
+            } else if (j > 2 * ground_pieces_z / 3) {
+                elevation = (j - 2 * ground_pieces_z / 3) * 2.0f;
+                elevation += dis_elevation(gen);
+
+                material = Material::Grass();
+            } else {
+                material = Material::Ground();
+            }
+
+            TexturedLightedMeshRenderablePtr ground = init_ground(texShader, material);
+            glm::mat4 translation = getTranslationMatrix(
+                (j - ground_pieces_z / 2) * ground_size,
+                elevation - 3,
+                (i - ground_pieces_x / 2) * ground_size
+            );
+
+            // Generate a random rotation angle
+            float angle = dis(gen);
+            glm::mat4 rotation = getRotationMatrix(glm::radians(angle), glm::vec3(0, 1, 0));
+
+            // Apply translation and rotation
+            ground->addLocalTransformKeyframe(
+                getTranslationMatrix(
+                    (j - ground_pieces_z / 2) * ground_size,
+                    elevation - 3,
+                    20 + (i - ground_pieces_x / 2) * ground_size
+                ) * rotation,
+                0
+            );
+            ground->addLocalTransformKeyframe(
+                getTranslationMatrix(
+                    (j - ground_pieces_z / 2) * ground_size,
+                    elevation - 3,
+                    -25 + (i - ground_pieces_x / 2) * ground_size
+                ) * rotation,
+                13
+            );
+            viewer.addRenderable(ground);
+
+            // 20% chance to spawn a tree in the outside areas
+            if ((j <= ground_pieces_z / 3) && dis_tree(gen) < 0.3) {
+                LightedMeshRenderablePtr tree;
+                if (dis_tree(gen) < 0.5) {
+                    tree = init_tree1(phong_shader);
+                } else {
+                    tree = init_tree2(phong_shader);
+                }
+                tree->addGlobalTransformKeyframe(
+                    getTranslationMatrix(
+                        (j - ground_pieces_z / 2) * ground_size,
+                        elevation - 3,
+                        20 + (i - ground_pieces_x / 2) * ground_size
+                    ), 
+                    0
+                );
+                tree->addGlobalTransformKeyframe(
+                    getTranslationMatrix(
+                        (j - ground_pieces_z / 2) * ground_size,
+                        elevation - 3,
+                        -25 + (i - ground_pieces_x / 2) * ground_size
+                    ), 
+                    13
+                );
+                HierarchicalRenderable::addChild(ground, tree);
+            }
+        }
+    }
 
     // Lightning
     glm::vec3 dir = glm::normalize(glm::vec3(-1,-1,-1));
