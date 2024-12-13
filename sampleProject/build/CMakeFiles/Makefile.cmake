@@ -63,26 +63,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/demo_cubemap_blurring.dir/DependInfo.cmake"
-  "CMakeFiles/demo_environment_lighting.dir/DependInfo.cmake"
-  "CMakeFiles/demo_load_materials.dir/DependInfo.cmake"
-  "CMakeFiles/demo_moving_lights.dir/DependInfo.cmake"
-  "CMakeFiles/demo_nonrigid.dir/DependInfo.cmake"
-  "CMakeFiles/demo_soft_body.dir/DependInfo.cmake"
   "CMakeFiles/logo.dir/DependInfo.cmake"
-  "CMakeFiles/playground.dir/DependInfo.cmake"
-  "CMakeFiles/practical1.dir/DependInfo.cmake"
-  "CMakeFiles/practical2.dir/DependInfo.cmake"
-  "CMakeFiles/practical3.dir/DependInfo.cmake"
-  "CMakeFiles/practical4.dir/DependInfo.cmake"
-  "CMakeFiles/practical5.dir/DependInfo.cmake"
-  "CMakeFiles/practical6.dir/DependInfo.cmake"
-  "CMakeFiles/practical7.dir/DependInfo.cmake"
   "CMakeFiles/scene1.dir/DependInfo.cmake"
   "CMakeFiles/scene2.dir/DependInfo.cmake"
   "CMakeFiles/scene3.dir/DependInfo.cmake"
   "CMakeFiles/scene4.dir/DependInfo.cmake"
   "CMakeFiles/scene5.dir/DependInfo.cmake"
   "CMakeFiles/scene6.dir/DependInfo.cmake"
-  "CMakeFiles/test.dir/DependInfo.cmake"
   )
